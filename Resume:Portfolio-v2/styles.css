@@ -1,0 +1,80 @@
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+html { font-family: sans-serif; 
+       font-size: 100%; 
+       /* font-size: 11px;  */
+       scroll-behavior: smooth; }
+
+a { text-decoration: none; }
+
+/* .border-debugger { border: 1px solid red; } */
+
+.italic { font-style: italic; }
+
+.bold { font-weight: bold; }
+
+.flex { display: flex; }
+
+.flex-column { flex-direction: column; }
+
+.flex-row-horizontal-flex-end { justify-content: flex-end; }
+
+.flex-grow { flex-grow: 1; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.outermost-container { padding: 1.5rem; }
+
+.mode { padding-top: 1rem; 
+        padding-bottom: 2rem; 
+        gap: 1rem; }
+
+.fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
+
+.separator { padding: 0rem 0.5rem 0rem 0.5rem; 
+             color: #AAAAAA; }
+
+.label { color: #777777;
+         text-transform: uppercase;
+         font-size: 0.9rem;
+         letter-spacing: 0.1rem; }
+
+/* Header Classes */
+
+.header-links-space-between { justify-content: space-between; }
+
+.header-links-padding-bottom { padding-bottom: 1rem; }
+
+/* Resume Classes */
+
+.resume-list-item { margin-left: 3rem; }
+
+.resume-topmost-hr-div { padding: 0.15625rem; }
+
+.resume-section-gap { gap: 2rem; }
+
+.resume-item-gap { gap: 0.6rem; }
+
+/* Portfolio Classes */
+
+.portfolio-section-gap { gap: 2rem; }
+
+.portfolio-gap { gap: 1rem; }
+
+.portfolio-tech-icon-list-flex-gap { gap: 0.5rem; }
+
+.portfolio-project-hr-div { padding: 0.125rem; }
+
+.portfolio-list-item { margin-left: 1rem; }
+
+.portfolio-tech-icon-container { padding-top: 0.25rem; }
+
+.portfolio-tech-icon { height: 1.8rem;
+                       width: auto;
+                       display: block; }
+
+.portfolio-project-image { width: 9.375rem;
+                           height: auto;
+                           border-radius: 5%; }

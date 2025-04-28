@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" 
+          href="./styles.css"> -->
+    <title>Robert's Resume</title>
+</head>
+<body onload="switchToResume()">
+    <!-- Start of JS -->
+    <script>
+        function switchToResume() {
+            document.getElementById('resumeText').style.display = 'block';
+            document.getElementById('resumeLink').style.display = 'none';
+            document.getElementById('portfolioText').style.display = 'none';
+            document.getElementById('portfolioLink').style.display = 'block';
+            document.getElementById('aboutText').style.display = 'none';
+            document.getElementById('aboutLink').style.display = 'block';
+            document.getElementById('linksText').style.display = 'none';
+            document.getElementById('linksLink').style.display = 'block';
+            document.getElementById('resume').style.display = 'block';
+            document.getElementById('portfolio').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('links').style.display = 'none';
+            return false;
+        }
+
+        function switchToPortfolio() {
+            document.getElementById('resumeText').style.display = 'none';
+            document.getElementById('resumeLink').style.display = 'block';
+            document.getElementById('portfolioText').style.display = 'block';
+            document.getElementById('portfolioLink').style.display = 'none';
+            document.getElementById('aboutText').style.display = 'none';
+            document.getElementById('aboutLink').style.display = 'block';
+            document.getElementById('linksText').style.display = 'none';
+            document.getElementById('linksLink').style.display = 'block';
+            document.getElementById('resume').style.display = 'none';
+            document.getElementById('portfolio').style.display = 'block';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('links').style.display = 'none';
+            return false;
+        }
+
+        function switchToAbout() {
+            document.getElementById('resumeText').style.display = 'none';
+            document.getElementById('resumeLink').style.display = 'block';
+            document.getElementById('portfolioText').style.display = 'none';
+            document.getElementById('portfolioLink').style.display = 'block';
+            document.getElementById('aboutText').style.display = 'block';
+            document.getElementById('aboutLink').style.display = 'none';
+            document.getElementById('linksText').style.display = 'none';
+            document.getElementById('linksLink').style.display = 'block';
+            document.getElementById('resume').style.display = 'none';
+            document.getElementById('portfolio').style.display = 'none';
+            document.getElementById('about').style.display = 'block';
+            document.getElementById('links').style.display = 'none';
+            return false;
+        }
+
+        function switchToLinks() {
+            document.getElementById('resumeText').style.display = 'none';
+            document.getElementById('resumeLink').style.display = 'block';
+            document.getElementById('portfolioText').style.display = 'none';
+            document.getElementById('portfolioLink').style.display = 'block';
+            document.getElementById('aboutText').style.display = 'none';
+            document.getElementById('aboutLink').style.display = 'block';
+            document.getElementById('linksText').style.display = 'block';
+            document.getElementById('linksLink').style.display = 'none';
+            document.getElementById('resume').style.display = 'none';
+            document.getElementById('portfolio').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('links').style.display = 'block';
+            return false;
+        }
+    </script>
+    <!-- Start of Internal CSS -->
+    <style>
+        * { box-sizing: border-box;
+            margin: 0;
+            padding: 0; }
+
+        html { font-family: sans-serif; 
+               font-size: 100%; 
+               scroll-behavior: smooth; }
+
+        a { text-decoration: none; }
+
+        /* .border-debugger { border: 1px solid red; } */
+
+        .italic { font-style: italic; }
+
+        .bold { font-weight: bold; }
+
+        .flex { display: flex; }
+
+        .flex-column { flex-direction: column; }
+
+        .flex-row-horizontal-flex-end { justify-content: flex-end; }
+
+        .flex-grow { flex-grow: 1; }
+
+        .flex-wrap { flex-wrap: wrap; }
+
+        .outermost-container { padding: 1.5rem; }
+
+        /* Will delete later as we don't use this anymore */
+        /* Old mode for Resume and Portfolio when they were below my name */
+        /* .mode { padding-top: 1rem; 
+                padding-bottom: 2rem; 
+                gap: 1rem; } */
+        
+        /* New mode class */
+        .mode { padding-top: 1rem;
+                padding-bottom: 2rem; }
+
+        .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
+
+        .separator { padding: 0rem 0.5rem 0rem 0.5rem; 
+                     color: #AAAAAA; }
+
+        .label { color: #777777;
+                 text-transform: uppercase;
+                 font-size: 0.9rem;
+                 letter-spacing: 0.1rem; }
+
+        /* Header Classes */
+
+        .header-links-space-between { justify-content: space-between; }
+
+        .header-links-padding-bottom { padding-bottom: 1rem; }
+
+        /* Resume Classes */
+
+        .resume-list-item { margin-left: 3rem; }
+
+        .resume-topmost-hr-div { padding: 0.15625rem; }
+
+        .resume-section-gap { gap: 2rem; }
+
+        .resume-item-gap { gap: 0.6rem; }
+
+        /* Portfolio Classes */
+
+        .portfolio-section-gap { gap: 2rem; }
+
+        .portfolio-gap { gap: 1rem; }
+
+        .portfolio-tech-icon-list-flex-gap { gap: 0.5rem; }
+
+        .portfolio-project-hr-div { padding: 0.125rem; }
+
+        .portfolio-list-item { margin-left: 1rem; }
+
+        .portfolio-tech-icon-container { padding-top: 0.25rem; }
+
+        .portfolio-tech-icon { height: 1.8rem;
+                               width: auto;
+                               display: block; }
+
+        .portfolio-project-image { width: 9.375rem;
+                                   height: auto;
+                                   border-radius: 5%; }
+    </style>
+    <!-- Start of HTML -->
+    <div class="flex flex-column outermost-container">
+        <div class="flex header-links-space-between header-links-padding-bottom">
+            <a href="https://robert-melton.vercel.app/resume.pdf">PDF version</a>
+            <div class="flex flex-wrap">
+                <span id="resumeText" 
+                        class="bold">
+                    Resume
+                </span>
+                <a href="#" 
+                    id="resumeLink" 
+                    onclick="switchToResume()">
+                    Resume
+                </a>
+                <span class="separator">|</span>
+                <span id="portfolioText" 
+                        class="bold">
+                    Portfolio
+                </span>
+                <a href="#" 
+                    id="portfolioLink" 
+                    onclick="switchToPortfolio()">
+                    Portfolio
+                </a>
+                <span class="separator">|</span>
+                <!-- Create HTML and JS for both About and Links links -->
+                <span id="aboutText" 
+                        class="bold">
+                    About
+                </span>
+                <a href="#" 
+                    id="aboutLink" 
+                    onclick="switchToAbout()">
+                    About
+                </a>
+                <span class="separator">|</span>
+                <span id="linksText" 
+                        class="bold">
+                    Links
+                </span>
+                <a href="#" 
+                    id="linksLink" 
+                    onclick="switchToLinks()">
+                    Links
+                </a>
+
+
+                <!-- <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e">Email</a> -->
+                <!-- <span class="separator">|</span> -->
+                <!-- ADD PDF RESUME LINK HERE -->
+                <!-- <a href="https://robert-melton-resume.vercel.app/Robert's-Resume.pdf">Resume (PDF)</a> -->
+                <!-- <span class="separator">|</span>
+                <a href="https://github.com/rsmelton" 
+                   target="_blank">
+                    GitHub
+                </a>
+                <span class="separator">|</span>
+                <a href="https://www.linkedin.com/in/rsmelton/" 
+                   target="_blank">
+                    LinkedIn
+                </a> -->
+            </div>
+        </div>
+        <div>
+            <h1>Robert Melton</h1>
+        </div>
+        <div class="resume-topmost-hr-div fade-color"></div>
+        <!-- <div class="flex mode">
+            <div>
+                <span id="resumeText" 
+                      class="bold">
+                    Resume
+                </span>
+                <a href="#" 
+                   id="resumeLink" 
+                   onclick="switchToResume()">
+                    Resume
+                </a>
+            </div>
+            <div>
+                <span id="portfolioText" 
+                      class="bold">
+                    Portfolio
+                </span>
+                <a href="#" 
+                   id="portfolioLink" 
+                   onclick="switchToPortfolio()">
+                    Portfolio
+                </a>
+            </div>
+        </div> -->
+        <!-- Resume Content -->
+        <div id="resume" class="mode">
+            <div class="flex flex-column resume-section-gap">
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">OBJECTIVE</span>
+                    <p>To join a technical staff that enables me to learn and grow from mentors, continue to add depth and breadth to my web development technology stack, and build well-designed, robust applications in an interesting domain</p>
+                </div> 
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">EDUCATION</span>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">The University of Alabama</span>, Tuscaloosa, AL (graduated December 2023)
+                        </div>
+                        <span>Bachelor of Science in Computer Science</span>
+                        <ul>
+                            <li class="resume-list-item">Major GPA: 3.3/4.0</li>
+                            <li class="resume-list-item">Dean's List (Fall 2019, Spring 2023, Fall 2023)</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">CodePath Technical Interview Prep</span>, Online Course (May - August 2023)
+                        </div>
+                        <ul>
+                            <li class="resume-list-item">
+                                Received 
+                                <a href="/images/CodePathCertificateOfCompletion.pdf" 
+                                   target="_blank">
+                                    certificate of completion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">
+                                <a href="https://xpro.mit.edu/courses/course-v1:xPRO+PCCx+R1/" 
+                                   target="_blank">
+                                    MIT xPRO’s Professional Certificate in Coding: Full Stack Development with MERN Program</a></span>, Online Course (May 2024 - January 2025)
+                        </div>
+                        <ul>
+                            <li class="resume-list-item">Comprehensive 8-month, in-depth course covering MongoDB, Express.js, React.js, and Node.js</li>
+                            <li class="resume-list-item">
+                                Received 
+                                <a href="/images/MIT-MERN-Stack-Program-Certficate.pdf" 
+                                   target="_blank">
+                                    certificate of completion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">TECHNICAL SKILLS</span>
+                    <div>
+                        <span class="bold">Programming Languages:</span> HTML/CSS, Javascript, MongoDB, Express.js, React.js, Node.js, Jest.js, C/C++/C#, Python, Swift, Java, Three.js, SwiftUI, SQL
+                    </div>
+                    <div>
+                        <span class="bold">Developer Tools:</span> VS Code, Visual Studio, Git, GitHub, Slack, Postman, Vite, MUI, Chakra UI, Render, Vercel, Firebase
+                    </div>
+                </div>
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">RELEVANT EXPERIENCE</span>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">Freelance Web Developer</span>, Florence, AL (August - November 2024)
+                        </div>
+                        <ul>
+                            <li class="resume-list-item">
+                                Designed, built, and deployed 
+                                <a href="https://the-lady-barber.vercel.app" 
+                                   target="_blank" 
+                                   class="bold">
+                                    The Lady Barber</a>, a website for a local barbershop
+                            </li>
+                            <li class="resume-list-item">Built with HTML, CSS, Javascript; hosted on Vercel</li>
+                            <li class="resume-list-item">Worked closely with the business owner to incorporate the desired information, features, and design</li>
+                            <li class="resume-list-item">Fully responsive on mobile and desktop</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">The University of Alabama</span>, Tuscaloosa, AL (August - December 2023)
+                        </div>
+                        <span class="italic">Web Developer</span>
+                        <ul>
+                            <li class="resume-list-item">
+                                Worked on a 4-person team to build the 
+                                <a href="https://uagradschooldocgenerator.web.app" 
+                                   target="_blank" 
+                                   class="bold">
+                                    Thesis and Dissertation Document Generator</a>, a React app to generate correctly formatted theses/dissertations for the Graduate School
+                            </li>
+                            <li class="resume-list-item">Built with React, CSS, MUI, and Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-column">
+                        <div>
+                            <span class="bold">The University of Alabama</span>, Tuscaloosa, AL (October - December 2023)
+                        </div>
+                        <span class="italic">C++ Teaching Assistant</span>
+                        <ul>
+                            <li class="resume-list-item">Supervised laboratory sessions</li>
+                            <li class="resume-list-item">Provided hands-on guidance in programming and software development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">PERSONAL PROJECTS</span>
+                    <span>Built to gain more experience with the MERN stack, RESTful API’s, MongoDB database communication, testing CRUD operations with Postman, and Chakra UI styling:</span>
+                    <div class="flex flex-column">
+                        <span class="bold">
+                            <a href="https://dragons-brew-cafe.onrender.com/home" 
+                               target="_blank">
+                                Dragon's Brew Cafe
+                            </a>
+                        </span>
+                        <ul>
+                            <li class="resume-list-item">Implements a shopping cart metaphor, enabling users to add and remove cafe items from their cart, as well as “purchase” items</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-column">
+                        <span class="bold">
+                            <a href="https://product-store-ibsl.onrender.com" 
+                               target="_blank">
+                                Product Store
+                            </a>
+                        </span>
+                        <ul>
+                            <li class="resume-list-item">Implements very basic inventory management, enabling users to create, edit, or remove products from the store</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-column resume-item-gap">
+                    <span class="label">REFERENCES</span>
+                    <span>Available upon request</span>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Content -->
+        <div id="portfolio" class="mode">
+            <div class="flex flex-column portfolio-section-gap">        
+                <div class="flex flex-column flex-grow portfolio-gap">
+                    <h2>The Lady Barber</h2>
+                    <div class="flex portfolio-gap flex-wrap">
+                        <img src="./images/tlb.jpeg"
+                             alt="The Lady Barber Sign" 
+                             class="portfolio-project-image">
+                        <div class="flex flex-column portfolio-gap">
+                            <div>
+                                <div class="label">Website</div>
+                                <a href="https://the-lady-barber.vercel.app" 
+                                   target="_blank">
+                                    https://the-lady-barber.vercel.app
+                                </a>
+                            </div>
+                            <div>
+                                <div class="label">Date</div>
+                                <span>Launched November 2024</span>
+                            </div>
+                            <div>
+                                <div class="label">Technologies</div>
+                                <div class="flex portfolio-tech-icon-list-flex-gap portfolio-tech-icon-container">
+                                    <a href="https://webplatform.github.io/docs/html/html5/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/html-icon.png" 
+                                             alt="HTML 5 Icon" 
+                                             title="HTML5">
+                                    </a>
+                                    <a href="https://devdocs.io/css/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/css-icon.png" 
+                                             alt="CSS Icon" 
+                                             title="CSS3">
+                                    </a>
+                                    <a href="https://devdocs.io/javascript/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/javascript-programming-language-icon.png" 
+                                             alt="Javascript Icon" 
+                                             title="Javascript">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label">Description</div>
+                        <span>Designed, built, and deployed the website for “The Lady Barber”, a local barbershop. Worked closely with the business owner to incorporate the desired information, features, and design.</span>
+                    </div>
+                    <div>
+                        <div class="label">Features</div>
+                        <ul>
+                            <li class="portfolio-list-item">Built with HTML, CSS, and Javascript; hosted on Vercel</li>
+                            <li class="portfolio-list-item">Fully responsive on mobile and desktop</li>
+                            <li class="portfolio-list-item">Sticky navbar allows user to traverse page quickly and efficiently</li>
+                            <li class="portfolio-list-item">Implemented my own gallery viewer widget that allows users to quickly flip through photos of the business</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-column flex-grow portfolio-gap">
+                    <div class="portfolio-project-hr-div fade-color"></div>
+                    <h2>Dragon's Brew Cafe</h2>
+                    <div class="flex portfolio-gap flex-wrap">
+                        <img src="./images/icons/dragons-brew-icon.png" 
+                             alt="Dragon's Brew Cafe Logo" 
+                             class="portfolio-project-image">
+                        <div class="flex flex-column portfolio-gap">
+                            <div>
+                                <div class="label">Website</div>
+                                <a href="https://dragons-brew-cafe.onrender.com/home" 
+                                   target="_blank">
+                                    https://dragons-brew-cafe.onrender.com/home
+                                </a>
+                            </div>
+                            <div>
+                                <div class="label">Date</div>
+                                <span>July 2024</span>
+                            </div>
+                            <div>
+                                <div class="label">Technologies</div>
+                                <div class="flex portfolio-tech-icon-list-flex-gap portfolio-tech-icon-container">
+                                    <a href="https://www.mongodb.com/docs/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/mongodb-icon.png" 
+                                             alt="MongoDB Icon" 
+                                             title="MongoDB">
+                                    </a>
+                                    <a href="https://expressjs.com" 
+                                       target="_blank">
+                                       <img class="portfolio-tech-icon" 
+                                            src="./images/icons/express-js-icon.png" 
+                                            alt="ExpressJS Icon" 
+                                            title="ExpressJS">
+                                    </a>
+                                    <a href="https://react.dev" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/react-js-icon.png" 
+                                             alt="ReactJS Icon" 
+                                             title="ReactJS">
+                                    </a>
+                                    <a href="https://nodejs.org/docs/latest/api/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/node-js-icon.png" 
+                                             alt="NodeJS Icon" 
+                                             title="NodeJS">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label">Description</div>
+                        <span>Designed and built a website for a fictional coffee shop that enables users to add, remove, or "purchase" items to/from their cart.</span>
+                    </div>
+                    <div>
+                        <div class="label">Features</div>
+                        <ul>
+                            <li class="portfolio-list-item">Fully responsive design</li>
+                            <li class="portfolio-list-item">Implemented Get, Post and Delete RESTful API’s for the shopping cart</li>
+                            <li class="portfolio-list-item">Implemented notifications with the useToast hook from Chakra UI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-column flex-grow portfolio-gap">
+                    <div class="portfolio-project-hr-div fade-color"></div>
+                    <h2>Product Store</h2>
+                    <div class="flex portfolio-gap flex-wrap">
+                        <img src="./images/icons/product-store-icon.png" 
+                             alt="Product Store Logo" 
+                             class="portfolio-project-image">
+                        <div class="flex flex-column portfolio-gap">
+                            <div>
+                                <div class="label">Website</div>
+                                <a href="https://product-store-ibsl.onrender.com" 
+                                   target="_blank">
+                                    https://product-store-ibsl.onrender.com
+                                </a>
+                            </div>
+                            <div>
+                                <div class="label">Date</div>
+                                <span>June 2024</span>
+                            </div>
+                            <div>
+                                <div class="label">Technologies</div>
+                                <div class="flex portfolio-tech-icon-list-flex-gap portfolio-tech-icon-container">
+                                    <a href="https://www.mongodb.com/docs/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/mongodb-icon.png" 
+                                             alt="MongoDB Icon" 
+                                             title="MongoDB">
+                                    </a>
+                                    <a href="https://expressjs.com" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/express-js-icon.png" 
+                                             alt="ExpressJS Icon" 
+                                             title="ExpressJS">
+                                    </a>
+                                    <a href="https://react.dev" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/react-js-icon.png" 
+                                             alt="ReactJS Icon" 
+                                             title="ReactJS">
+                                    </a>
+                                    <a href="https://nodejs.org/docs/latest/api/" 
+                                       target="_blank">
+                                        <img class="portfolio-tech-icon" 
+                                             src="./images/icons/node-js-icon.png" 
+                                             alt="NodeJS Icon" 
+                                             title="NodeJS">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label">Description</div>
+                        <span>Simple web app that allows a user to add, remove, or edit products in the product store</span>
+                    </div>
+                    <div>
+                        <div class="label">Features</div>
+                        <ul>
+                            <li class="portfolio-list-item">Fully responsive design</li>
+                            <li class="portfolio-list-item">Get, Post, Update, and Delete RESTful APIs</li>
+                            <li class="portfolio-list-item">Popup window modal created with Chakra UI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="mode">
+            <p>This is currently placeholder text for the About page until we get the design we want.</p>
+        </div>
+        <div id="links" class="mode">
+            <p>This is currently placeholder text for the Links page until we get the design we want.</p>
+        </div>
+    </div>
+</body>
+</html>
