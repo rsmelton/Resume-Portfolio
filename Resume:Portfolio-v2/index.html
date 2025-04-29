@@ -99,6 +99,8 @@
 
         .flex-row-horizontal-flex-end { justify-content: flex-end; }
 
+        .flex-space-between { justify-content: space-around; }
+
         .flex-grow { flex-grow: 1; }
 
         .flex-wrap { flex-wrap: wrap; }
@@ -128,6 +130,9 @@
         /* Header Classes */
 
         .header-links-space-between { justify-content: space-between; }
+
+        /* Will prob use this since we are likely removing pdf version link */
+        .header-links-flex-end { justify-content: flex-end; }
 
         .header-links-padding-bottom { padding-bottom: 1rem; }
 
@@ -162,41 +167,44 @@
         .portfolio-project-image { width: 9.375rem;
                                    height: auto;
                                    border-radius: 5%; }
+
+        /* About classes */
+
+        .about-img { width: auto; 
+                     height: 150px;}
     </style>
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
-        <div class="flex header-links-space-between header-links-padding-bottom">
-            <a href="">PDF version</a>
+        <!-- <div class="flex header-links-flex-end header-links-padding-bottom">
             <div class="flex flex-wrap">
+                <span id="aboutText" 
+                      class="bold">
+                    About
+                </span>
+                <a href="#" 
+                   id="aboutLink" 
+                   onclick="switchToAbout()">
+                    About
+                </a>
+                <span class="separator">|</span>
                 <span id="resumeText" 
-                        class="bold">
+                      class="bold">
                     Resume
                 </span>
                 <a href="#" 
-                    id="resumeLink" 
-                    onclick="switchToResume()">
+                   id="resumeLink" 
+                   onclick="switchToResume()">
                     Resume
                 </a>
                 <span class="separator">|</span>
                 <span id="portfolioText" 
                         class="bold">
-                    Portfolio
+                    Projects
                 </span>
                 <a href="#" 
                     id="portfolioLink" 
                     onclick="switchToPortfolio()">
-                    Portfolio
-                </a>
-                <span class="separator">|</span>
-                <!-- Create HTML and JS for both About and Links links -->
-                <span id="aboutText" 
-                        class="bold">
-                    About
-                </span>
-                <a href="#" 
-                    id="aboutLink" 
-                    onclick="switchToAbout()">
-                    About
+                    Projects
                 </a>
                 <span class="separator">|</span>
                 <span id="linksText" 
@@ -208,24 +216,8 @@
                     onclick="switchToLinks()">
                     Links
                 </a>
-
-
-                <!-- <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e">Email</a> -->
-                <!-- <span class="separator">|</span> -->
-                <!-- ADD PDF RESUME LINK HERE -->
-                <!-- <a href="https://robert-melton-resume.vercel.app/Robert's-Resume.pdf">Resume (PDF)</a> -->
-                <!-- <span class="separator">|</span>
-                <a href="https://github.com/rsmelton" 
-                   target="_blank">
-                    GitHub
-                </a>
-                <span class="separator">|</span>
-                <a href="https://www.linkedin.com/in/rsmelton/" 
-                   target="_blank">
-                    LinkedIn
-                </a> -->
             </div>
-        </div>
+        </div> -->
         <div>
             <h1>Robert Melton</h1>
         </div>
@@ -257,6 +249,7 @@
         <!-- Resume Content -->
         <div id="resume" class="mode">
             <div class="flex flex-column resume-section-gap">
+                <a href="https://roberts-personal-website.vercel.app">Back to personal website</a>
                 <div class="flex flex-column resume-item-gap">
                     <span class="label">OBJECTIVE</span>
                     <p>To join a technical staff that enables me to learn and grow from mentors, continue to add depth and breadth to my web development technology stack, and build well-designed, robust applications in an interesting domain</p>
@@ -394,7 +387,7 @@
             </div>
         </div>
         <!-- Portfolio Content -->
-        <div id="portfolio" class="mode">
+        <!-- <div id="portfolio" class="mode">
             <div class="flex flex-column portfolio-section-gap">        
                 <div class="flex flex-column flex-grow portfolio-gap">
                     <h2>The Lady Barber</h2>
@@ -593,11 +586,36 @@
             </div>
         </div>
         <div id="about" class="mode">
-            <p>This is currently placeholder text for the About page until we get the design we want.</p>
+            <div class="flex flex-space-between flex-wrap">
+                <div class="flex flex-column">
+                    <div>
+                        <h1>Hi, I'm Robert</h1>
+                        <h3>Software Developer</h3>
+                    </div>
+                    <div class="flex">
+                        <div>Logo 1</div>
+                        <div>Logo 2</div>
+                        <div>Logo 3</div>
+                    </div>
+                    <div class="flex">
+                        <div>Icon 1</div>
+                        <div>Text 1</div>
+                    </div>
+                    <div class="flex">
+                        <div>Icon 2</div>
+                        <div>Text 2</div>
+                    </div>
+                    <div class="flex">
+                        <div>Icon 3</div>
+                        <div>Text 3</div>
+                    </div>
+                </div>
+                <img class="about-img" src="./images/dev.png" alt="Robert sitting at computer">
+            </div>
         </div>
         <div id="links" class="mode">
             <p>This is currently placeholder text for the Links page until we get the design we want.</p>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
