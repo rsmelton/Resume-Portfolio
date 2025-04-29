@@ -8,7 +8,7 @@
           href="./styles.css"> -->
     <title>Robert's Personal Website</title>
 </head>
-<body onload="switchToResume()">
+<body onload="switchToAbout()">
     <!-- Start of JS -->
     <script>
         function switchToResume() {
@@ -99,21 +99,14 @@
 
         .flex-row-horizontal-flex-end { justify-content: flex-end; }
 
-        .flex-space-between { justify-content: space-around; }
+        .flex-space-around { justify-content: space-around; }
 
         .flex-grow { flex-grow: 1; }
 
         .flex-wrap { flex-wrap: wrap; }
 
         .outermost-container { padding: 1.5rem; }
-
-        /* Will delete later as we don't use this anymore */
-        /* Old mode for Resume and Portfolio when they were below my name */
-        /* .mode { padding-top: 1rem; 
-                padding-bottom: 2rem; 
-                gap: 1rem; } */
         
-        /* New mode class */
         .mode { padding-top: 1rem;
                 padding-bottom: 2rem; }
 
@@ -131,7 +124,6 @@
 
         .header-links-space-between { justify-content: space-between; }
 
-        /* Will prob use this since we are likely removing pdf version link */
         .header-links-flex-end { justify-content: flex-end; }
 
         .header-links-padding-bottom { padding-bottom: 1rem; }
@@ -169,9 +161,24 @@
                                    border-radius: 5%; }
 
         /* About classes */
+        
+        .about-align-items-center { align-items: center; }
 
         .about-img { width: auto; 
-                     height: 150px;}
+                     height: 350px;
+                     border-radius: 100%; }
+
+        .about-text-blue-color { color: #4FA7FF; }
+
+        .about-intro-section-gap { gap: .5rem; }
+
+        .about-icon { width: auto; 
+                      height: 40px; }
+
+        .about-icon-description-gap { gap: 1rem; }
+
+        .about-icon-description-align-items-center { align-items: center; }
+
     </style>
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
@@ -565,28 +572,28 @@
             </div>
         </div>
         <div id="about" class="mode">
-            <div class="flex flex-space-between flex-wrap">
-                <div class="flex flex-column">
+            <div class="flex flex-space-around flex-wrap about-align-items-center">
+                <div class="flex flex-column about-intro-section-gap">
                     <div>
                         <h1>Hi, I'm Robert</h1>
-                        <h3>Software Developer</h3>
+                        <h3 class="about-text-blue-color">Software Developer</h3>
+                        <div class="flex" style="gap: .5rem;">
+                            <a href="https://github.com/rsmelton" target="_blank"><img class="about-icon" src="./images/icons/github-icon.png" alt="GitHub Icon"></a>
+                            <a href="https://www.linkedin.com/in/rsmelton/" target="_blank"><img class="about-icon" src="./images/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                            <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e"><img class="about-icon" src="./images/icons/email-icon.png" alt="Email Icon"></a>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div>Logo 1</div>
-                        <div>Logo 2</div>
-                        <div>Logo 3</div>
+                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
+                        <img class="about-icon" src="./images/icons/graduation-cap.png" alt="Graduation Cap">
+                        <div>Lifelong learner</div>
                     </div>
-                    <div class="flex">
-                        <div>Icon 1</div>
-                        <div>Text 1</div>
+                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
+                        <img class="about-icon" src="./images/icons/dumbbell.png" alt="Dumbbell">
+                        <div>Gym rat</div>
                     </div>
-                    <div class="flex">
-                        <div>Icon 2</div>
-                        <div>Text 2</div>
-                    </div>
-                    <div class="flex">
-                        <div>Icon 3</div>
-                        <div>Text 3</div>
+                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
+                        <img class="about-icon" src="./images/icons/coffee-cup.png" alt="Coffee cup">
+                        <div>Coffee addict</div>
                     </div>
                 </div>
                 <img class="about-img" src="./images/dev.png" alt="Robert sitting at computer">
