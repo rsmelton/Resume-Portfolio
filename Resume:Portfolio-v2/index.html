@@ -8,9 +8,10 @@
           href="./styles.css"> -->
     <title>Robert's Personal Website</title>
 </head>
-<body onload="switchToAbout()">
+<!-- <body onload="switchToAbout()"> -->
+<body>
     <!-- Start of JS -->
-    <script>
+    <!-- <script>
         function switchToResume() {
             document.getElementById('resumeText').style.display = 'block';
             document.getElementById('resumeLink').style.display = 'none';
@@ -74,7 +75,7 @@
             document.getElementById('links').style.display = 'block';
             return false;
         }
-    </script>
+    </script> -->
     <!-- Start of Internal CSS -->
     <style>
         * { box-sizing: border-box;
@@ -107,8 +108,9 @@
 
         .outermost-container { padding: 1.5rem; }
         
-        .mode { padding-top: 1rem;
-                padding-bottom: 2rem; }
+        /* Don't think we need this class anymore */
+        /* .mode { padding-top: 1rem;
+                padding-bottom: 2rem; } */
 
         .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
 
@@ -129,6 +131,8 @@
         .header-links-padding-bottom { padding-bottom: 1rem; }
 
         /* Resume Classes */
+
+        .resume-pdf-version-link-top-padding { padding-top: 1rem; }
 
         .resume-list-item { margin-left: 3rem; }
 
@@ -175,17 +179,19 @@
         .about-icon { width: auto; 
                       height: 40px; }
 
-        .about-icon-description-gap { gap: 1rem; }
+        .about-link-icon-gap { gap: .5rem; }
 
-        .about-icon-description-align-items-center { align-items: center; }
+        .about-descriptive-icon-description-gap { gap: .5rem; }
+
+        .about-descriptive-icon-description-align-items-center { align-items: center; }
 
     </style>
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
-        <!-- <div class="flex header-links-flex-end">
-            <a href="https://roberts-personal-website.vercel.app">Back to personal website</a>
-        </div> -->
-        <div class="flex header-links-flex-end header-links-padding-bottom">
+        <div class="flex header-links-flex-end">
+            <a href="https://roberts-personal-website.vercel.app/#display?resume">Back to personal website</a>
+        </div>
+        <!-- <div class="flex header-links-flex-end header-links-padding-bottom">
             <div class="flex flex-wrap">
                 <span id="aboutText" 
                       class="bold">
@@ -208,7 +214,7 @@
                 </a>
                 <span class="separator">|</span>
                 <span id="portfolioText" 
-                        class="bold">
+                      class="bold">
                     Projects
                 </span>
                 <a href="#" 
@@ -218,7 +224,7 @@
                 </a>
                 <span class="separator">|</span>
                 <span id="linksText" 
-                        class="bold">
+                      class="bold">
                     Links
                 </span>
                 <a href="#" 
@@ -227,16 +233,18 @@
                     Links
                 </a>
             </div>
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
             <h1>Robert Melton</h1>
         </div>
-        <div class="resume-topmost-hr-div fade-color"></div>
+        <div class="resume-topmost-hr-div fade-color"></div> -->
         <!-- Resume Content -->
-        <div id="resume" class="mode">
+        <div id="resume">
+            <h1>Robert Melton</h1>
+            <div class="resume-topmost-hr-div fade-color"></div>
             <div class="flex flex-column resume-section-gap">
-                <a href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a>
-                <div class="flex flex-column resume-item-gap">
+                <!-- <a class="resume-pdf-version-link-top-padding" href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a> -->
+                <div class="flex flex-column resume-item-gap" style="padding-top: 1rem;">
                     <span class="label">OBJECTIVE</span>
                     <p>To join a technical staff that enables me to learn and grow from mentors, continue to add depth and breadth to my web development technology stack, and build well-designed, robust applications in an interesting domain</p>
                 </div> 
@@ -373,7 +381,7 @@
             </div>
         </div>
         <!-- Portfolio Content -->
-        <div id="portfolio" class="mode">
+        <!-- <div id="portfolio">
             <div class="flex flex-column portfolio-section-gap">        
                 <div class="flex flex-column flex-grow portfolio-gap">
                     <h2>The Lady Barber</h2>
@@ -571,37 +579,63 @@
                 </div>
             </div>
         </div>
-        <div id="about" class="mode">
+        <div id="about">
             <div class="flex flex-space-around flex-wrap about-align-items-center">
                 <div class="flex flex-column about-intro-section-gap">
                     <div>
                         <h1>Hi, I'm Robert</h1>
                         <h3 class="about-text-blue-color">Software Developer</h3>
-                        <div class="flex" style="gap: .5rem;">
-                            <a href="https://github.com/rsmelton" target="_blank"><img class="about-icon" src="./images/icons/github-icon.png" alt="GitHub Icon"></a>
-                            <a href="https://www.linkedin.com/in/rsmelton/" target="_blank"><img class="about-icon" src="./images/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
-                            <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e"><img class="about-icon" src="./images/icons/email-icon.png" alt="Email Icon"></a>
+                        <div class="flex about-link-icon-gap">
+                            <a href="https://github.com/rsmelton" 
+                               target="_blank">
+                                <img class="about-icon" 
+                                     src="./images/icons/github-icon.png" 
+                                     alt="GitHub Icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/rsmelton/" 
+                               target="_blank">
+                                <img class="about-icon" 
+                                     src="./images/icons/linkedin-icon.png" 
+                                     alt="LinkedIn Icon">
+                            </a>
+                            <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e">
+                                <img class="about-icon" 
+                                     src="./images/icons/email-icon.png" 
+                                     alt="Email Icon">
+                            </a>
                         </div>
                     </div>
-                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
-                        <img class="about-icon" src="./images/icons/graduation-cap.png" alt="Graduation Cap">
+                    <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                        <img class="about-icon" 
+                             src="./images/icons/graduation-cap.png" 
+                             alt="Graduation Cap"
+                        >
                         <div>Lifelong learner</div>
                     </div>
-                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
-                        <img class="about-icon" src="./images/icons/dumbbell.png" alt="Dumbbell">
+                    <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                        <img class="about-icon" 
+                             src="./images/icons/dumbbell.png" 
+                             alt="Dumbbell"
+                        >
                         <div>Gym rat</div>
                     </div>
-                    <div class="flex about-icon-description-align-items-center about-icon-description-gap">
-                        <img class="about-icon" src="./images/icons/coffee-cup.png" alt="Coffee cup">
+                    <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                        <img class="about-icon" 
+                             src="./images/icons/coffee-cup.png" 
+                             alt="Coffee cup"
+                        >
                         <div>Coffee addict</div>
                     </div>
                 </div>
-                <img class="about-img" src="./images/dev.png" alt="Robert sitting at computer">
+                <img class="about-img" 
+                     src="./images/dev.png" 
+                     alt="Robert sitting at computer"
+                >
             </div>
         </div>
-        <div id="links" class="mode">
+        <div id="links">
             <p>This is currently placeholder text for the Links page until we get the design we want.</p>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
