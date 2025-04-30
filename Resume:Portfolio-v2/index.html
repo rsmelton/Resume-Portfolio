@@ -8,10 +8,10 @@
           href="./styles.css"> -->
     <title>Robert's Personal Website</title>
 </head>
-<!-- <body onload="switchToSpecifiedHtml()"> -->
-<body>
+<body onload="switchToSpecifiedHtml()">
+<!-- <body> -->
     <!-- Start of JS -->
-    <!-- <script>
+    <script>
         function switchToResume() {
             document.getElementById('resumeText').style.display = 'block';
             document.getElementById('resumeLink').style.display = 'none';
@@ -90,7 +90,7 @@
             else if (paramValue === 'links') switchToLinks();
             else switchToAbout();
         }
-    </script> -->
+    </script>
     <!-- Start of Internal CSS -->
     <style>
         * { box-sizing: border-box;
@@ -203,10 +203,10 @@
     </style>
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
-        <div class="flex header-links-flex-end">
+        <!-- <div class="flex header-links-flex-end">
             <a href="https://roberts-personal-website.vercel.app/?display=resume">Back to personal website</a>
-        </div>
-        <!-- <div class="flex header-links-flex-end header-links-padding-bottom">
+        </div> -->
+        <div class="flex header-links-flex-end header-links-padding-bottom">
             <div class="flex flex-wrap">
                 <span id="aboutText" 
                       class="bold">
@@ -248,7 +248,7 @@
                     Links
                 </a>
             </div>
-        </div> -->
+        </div>
         <!-- Resume content -->
         <div id="resume">
             <h1>Robert Melton</h1>
@@ -392,7 +392,7 @@
             </div>
         </div>
         <!-- Portfolio content -->
-        <!-- <div id="portfolio">
+        <div id="portfolio">
             <div class="flex flex-column portfolio-section-gap">        
                 <div class="flex flex-column flex-grow portfolio-gap">
                     <h2>The Lady Barber</h2>
@@ -589,9 +589,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- About content -->
-        <!-- <div id="about">
+        <div id="about">
             <div class="flex flex-space-around flex-wrap about-align-items-center">
                 <div class="flex flex-column about-intro-section-gap">
                     <div>
@@ -644,11 +644,11 @@
                      alt="Robert sitting at computer"
                 >
             </div>
-        </div> -->
+        </div>
         <!-- Links content -->
-        <!-- <div id="links">
+        <div id="links">
             <p>This is currently placeholder text for the Links page until we get the design we want.</p>
-        </div> -->
+        </div>
     </div>
 </body>
 </html>
