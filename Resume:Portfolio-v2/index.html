@@ -78,7 +78,9 @@
 
         function switchToSpecifiedHtml() {
             const urlParams = new URLSearchParams(window.location.search);
-            const paramValue = urlParams.get('paramName');
+            console.log(`Url Params: ${urlParams}`);
+
+            const paramValue = urlParams.get('resume');
 
             console.log(`Param Value: ${paramValue}`);
 
