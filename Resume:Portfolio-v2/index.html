@@ -78,11 +78,11 @@
 
         function switchToSpecifiedHtml() {
             const urlParams = new URLSearchParams(window.location.search);
-            console.log(`Url Params: ${urlParams}`);
+            // console.log(`Url Params: ${urlParams}`);
 
             const paramValue = urlParams.get('display');
 
-            console.log(`Param Value: ${paramValue}`);
+            // console.log(`Param Value: ${paramValue}`);
 
             if (paramValue === 'about') switchToAbout();
             else if (paramValue === 'resume') switchToResume();
