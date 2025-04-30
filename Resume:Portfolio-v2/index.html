@@ -84,7 +84,11 @@
 
             console.log(`Param Value: ${paramValue}`);
 
-            switchToAbout();
+            if (paramValue === 'about') switchToAbout();
+            else if (paramValue === 'resume') switchToResume();
+            else if (paramValue === 'portfolio') switchToPortfolio();
+            else if (paramValue === 'links') switchToLinks();
+            else switchToAbout();
         }
     </script>
     <!-- Start of Internal CSS -->
@@ -208,7 +212,7 @@
                       class="bold">
                     About
                 </span>
-                <a href="https://roberts-personal-website.vercel.app/#?display=about" 
+                <a href="https://roberts-personal-website.vercel.app/?display=about" 
                    id="aboutLink" 
                    onclick="switchToAbout()">
                     About
@@ -218,7 +222,7 @@
                       class="bold">
                     Resume
                 </span>
-                <a href="https://roberts-personal-website.vercel.app/#?display=resume" 
+                <a href="https://roberts-personal-website.vercel.app/?display=resume" 
                    id="resumeLink" 
                    onclick="switchToResume()">
                     Resume
@@ -228,7 +232,7 @@
                       class="bold">
                     Projects
                 </span>
-                <a href="https://roberts-personal-website.vercel.app/#?display=portfolio" 
+                <a href="https://roberts-personal-website.vercel.app/?display=portfolio" 
                     id="portfolioLink" 
                     onclick="switchToPortfolio()">
                     Projects
@@ -238,7 +242,7 @@
                       class="bold">
                     Links
                 </span>
-                <a href="https://roberts-personal-website.vercel.app/#?display=links" 
+                <a href="https://roberts-personal-website.vercel.app/?display=links" 
                     id="linksLink" 
                     onclick="switchToLinks()">
                     Links
