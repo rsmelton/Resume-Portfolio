@@ -8,7 +8,7 @@
           href="./styles.css"> -->
     <title>Robert's Personal Website</title>
 </head>
-<!-- <body onload="switchToAbout()"> -->
+<!-- <body onload="switchToSpecifiedHtml()"> -->
 <body>
     <!-- Start of JS -->
     <!-- <script>
@@ -74,6 +74,15 @@
             document.getElementById('about').style.display = 'none';
             document.getElementById('links').style.display = 'block';
             return false;
+        }
+
+        function switchToSpecifiedHtml() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const paramValue = urlParams.get('paramName');
+
+            console.log(`Param Value: ${paramValue}`);
+
+            switchToAbout();
         }
     </script> -->
     <!-- Start of Internal CSS -->
@@ -189,7 +198,7 @@
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
         <div class="flex header-links-flex-end">
-            <a href="https://roberts-personal-website.vercel.app/#display?resume">Back to personal website</a>
+            <a href="https://roberts-personal-website.vercel.app/display?resume">Back to personal website</a>
         </div>
         <!-- <div class="flex header-links-flex-end header-links-padding-bottom">
             <div class="flex flex-wrap">
@@ -197,7 +206,7 @@
                       class="bold">
                     About
                 </span>
-                <a href="#" 
+                <a href="https://roberts-personal-website.vercel.app/display?about" 
                    id="aboutLink" 
                    onclick="switchToAbout()">
                     About
@@ -207,7 +216,7 @@
                       class="bold">
                     Resume
                 </span>
-                <a href="#" 
+                <a href="https://roberts-personal-website.vercel.app/display?resume" 
                    id="resumeLink" 
                    onclick="switchToResume()">
                     Resume
@@ -217,7 +226,7 @@
                       class="bold">
                     Projects
                 </span>
-                <a href="#" 
+                <a href="https://roberts-personal-website.vercel.app/display?portfolio" 
                     id="portfolioLink" 
                     onclick="switchToPortfolio()">
                     Projects
@@ -227,18 +236,14 @@
                       class="bold">
                     Links
                 </span>
-                <a href="#" 
+                <a href="https://roberts-personal-website.vercel.app/display?links" 
                     id="linksLink" 
                     onclick="switchToLinks()">
                     Links
                 </a>
             </div>
         </div> -->
-        <!-- <div>
-            <h1>Robert Melton</h1>
-        </div>
-        <div class="resume-topmost-hr-div fade-color"></div> -->
-        <!-- Resume Content -->
+        <!-- Resume content -->
         <div id="resume">
             <h1>Robert Melton</h1>
             <div class="resume-topmost-hr-div fade-color"></div>
@@ -380,7 +385,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Content -->
+        <!-- Portfolio content -->
         <!-- <div id="portfolio">
             <div class="flex flex-column portfolio-section-gap">        
                 <div class="flex flex-column flex-grow portfolio-gap">
@@ -578,8 +583,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="about">
+        </div> -->
+        <!-- About content -->
+        <!-- <div id="about">
             <div class="flex flex-space-around flex-wrap about-align-items-center">
                 <div class="flex flex-column about-intro-section-gap">
                     <div>
@@ -632,8 +638,9 @@
                      alt="Robert sitting at computer"
                 >
             </div>
-        </div>
-        <div id="links">
+        </div> -->
+        <!-- Links content -->
+        <!-- <div id="links">
             <p>This is currently placeholder text for the Links page until we get the design we want.</p>
         </div> -->
     </div>
