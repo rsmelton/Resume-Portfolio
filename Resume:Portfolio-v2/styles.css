@@ -50,6 +50,8 @@ a { text-decoration: none; }
 
 .header-links-padding-bottom { padding-bottom: 1rem; }
 
+.header-links-gap { gap: 1rem; }
+
 /* Resume Classes */
 
 .resume-pdf-version-link-top-padding { padding-top: 1rem; }
