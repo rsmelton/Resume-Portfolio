@@ -11,15 +11,74 @@
 <body>
     <!-- Start of HTML -->
     <div class="flex flex-column outermost-container">
-        <div class="flex header-links-flex-end">
-            <a href="https://roberts-personal-website.vercel.app/resume.html">Back to personal website</a>
+        <nav class="flex flex-wrap header-links-flex-end header-links-padding-bottom">
+            <a href="/">About</a>
+            <span class="separator">|</span>
+            <a href="/resume.html">Resume</a>
+            <span class="separator">|</span>
+            <a href="/projects.html">Projects</a>
+        </nav>
+        <div class="flex flex-space-around flex-wrap about-align-items-center">
+            <div class="flex flex-column about-intro-section-gap">
+                <div>
+                    <h1>Hi, I'm Robert</h1>
+                    <h3 class="about-text-blue-color">Software Developer</h3>
+                    <div class="flex about-link-icon-gap">
+                        <a href="https://github.com/rsmelton" 
+                            target="_blank">
+                            <img class="about-icon" 
+                                    src="./images/icons/github-icon.png" 
+                                    alt="GitHub Icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/rsmelton/" 
+                            target="_blank">
+                            <img class="about-icon" 
+                                    src="./images/icons/linkedin-icon.png" 
+                                    alt="LinkedIn Icon">
+                        </a>
+                        <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e">
+                            <img class="about-icon" 
+                                    src="./images/icons/email-icon.png" 
+                                    alt="Email Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                    <img class="about-icon" 
+                            src="./images/icons/graduation-cap.png" 
+                            alt="Graduation Cap"
+                    >
+                    <div>Lifelong learner</div>
+                </div>
+                <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                    <img class="about-icon" 
+                            src="./images/icons/dumbbell.png" 
+                            alt="Dumbbell"
+                    >
+                    <div>Gym rat</div>
+                </div>
+                <div class="flex about-descriptive-icon-description-align-items-center about-descriptive-icon-description-gap">
+                    <img class="about-icon" 
+                            src="./images/icons/coffee-cup.png" 
+                            alt="Coffee cup"
+                    >
+                    <div>Coffee addict</div>
+                </div>
+            </div>
+            <img class="about-img" 
+                    src="./images/dev.png" 
+                    alt="Robert sitting at computer"
+            >
         </div>
+        <!-- <div class="flex header-links-flex-end">
+            <a href="https://roberts-personal-website.vercel.app/resume.html">Back to personal website</a>
+        </div> -->
         <!-- Resume content -->
-        <h1>Robert Melton</h1>
+        <!-- <h1>Robert Melton</h1>
         <div class="resume-topmost-hr-div fade-color"></div>
         <div class="flex flex-column resume-section-gap">
-            <!-- <a class="resume-pdf-version-link-top-padding" href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a> -->
-            <div class="flex flex-column resume-item-gap" style="padding-top: 1rem;">
+            <a class="resume-pdf-version-link-top-padding" href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a>
+            <div class="flex flex-column resume-item-gap">
                 <span class="label">OBJECTIVE</span>
                 <p>To join a technical staff that enables me to learn and grow from mentors, continue to add depth and breadth to my web development technology stack, and build well-designed, robust applications in an interesting domain</p>
             </div> 
@@ -153,7 +212,7 @@
                 <span class="label">REFERENCES</span>
                 <span>Available upon request</span>
             </div>
-        </div>
+        </div> -->
         <!-- Portfolio content -->
         <!-- <div id="portfolio">
             <div class="flex flex-column portfolio-section-gap">        
