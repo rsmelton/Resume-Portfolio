@@ -96,11 +96,11 @@ a { text-decoration: none; }
 
 .about-intro-section-gap { gap: .5rem; }
 
+.about-link-gap { gap: .5rem; }
+
 .about-icon { width: auto; 
               height: 40px; }
 
-.about-link-icon-gap { gap: .5rem; }
+.about-icon-description-gap { gap: .5rem; }
 
-.about-descriptive-icon-description-gap { gap: .5rem; }
-
-.about-descriptive-icon-description-align-items-center { align-items: center; }
+.about-icon-description-align-items-center { align-items: center; }
