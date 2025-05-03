@@ -8,7 +8,7 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
-/* .border-debugger { border: 1px solid red; } */
+/* .border-debugger { border: 1px solid red; }  */
 
 .italic { font-style: italic; }
 
@@ -20,17 +20,13 @@ a { text-decoration: none; }
 
 .flex-row-horizontal-flex-end { justify-content: flex-end; }
 
-.flex-space-around { justify-content: space-around; }
-
 .flex-grow { flex-grow: 1; }
 
 .flex-wrap { flex-wrap: wrap; }
 
-.outermost-container { padding: 1.5rem; }
+.justify-content-center { justify-content: center; }
 
-/* Don't think we need this class anymore */
-/* .mode { padding-top: 1rem;
-        padding-bottom: 2rem; } */
+.align-items-center { align-items: center; }
 
 .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
 
@@ -44,15 +40,13 @@ a { text-decoration: none; }
 
 /* Header Classes */
 
-.header-links-space-between { justify-content: space-between; }
-
-.header-links-flex-end { justify-content: flex-end; }
-
-.header-links-padding-bottom { padding-bottom: 1rem; }
-
-.header-links-gap { gap: 1rem; }
+.header-container { justify-content: flex-end; 
+                    padding: 1.5rem; 
+                    gap: 1rem; }
 
 /* Resume Classes */
+
+.resume-container { padding: 0 1.5rem 1.5rem 1.5rem; }
 
 .resume-pdf-version-link-top-padding { padding-top: 1rem; }
 
@@ -65,6 +59,8 @@ a { text-decoration: none; }
 .resume-item-gap { gap: 0.6rem; }
 
 /* Portfolio Classes */
+
+.portfolio-container { padding: 0 1.5rem 1.5rem 1.5rem; }
 
 .portfolio-section-gap { gap: 2rem; }
 
@@ -88,15 +84,20 @@ a { text-decoration: none; }
 
 /* About classes */
 
-.about-align-items-center { align-items: center; }
+.about-page-container { margin: 1rem 3rem 1rem 3rem; }
 
-.about-img { width: auto; 
-             height: 350px;
-             border-radius: 100%; }
+.about-intro-img-container { justify-content: space-around; 
+                             align-items: center;  
+                             gap: 3rem; }
+
+.about-intro-gap { gap: 1rem; }
+
+.about-section-gap { gap: 5rem; }
+
+.about-img { width: 250px; 
+             height: auto; }
 
 .about-text-blue-color { color: #4FA7FF; }
-
-.about-intro-section-gap { gap: .5rem; }
 
 .about-link-gap { gap: .5rem; }
 
@@ -105,4 +106,9 @@ a { text-decoration: none; }
 
 .about-icon-description-gap { gap: .5rem; }
 
-.about-icon-description-align-items-center { align-items: center; }
+.skills-container-gap { gap: 1rem; }
+
+.skills-icon-container-gap { gap: 1rem; }
+
+.skill-icon { width: auto; 
+              height: 40px; }
