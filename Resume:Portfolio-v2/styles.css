@@ -84,10 +84,12 @@ a { text-decoration: none; }
 
 /* About classes */
 
-.about-page-container { padding: 2.5rem; 
-                        gap: 2.5rem; }
+/* .about-page-container { padding: 2.5rem; 
+                        gap: 2.5rem; } */
 
-.about-name-text-font-size { font-size: 3rem; }
+.section { padding: 1rem; }
+
+/* .about-name-text-font-size { font-size: 3rem; }
 
 .about-text-blue-color { color: #4FA7FF; }
 
@@ -97,10 +99,10 @@ a { text-decoration: none; }
 
 .about-skills-container-gap { gap: 1rem; }
 
-.about-skills-icon-container-gap { gap: 2rem; }
+.about-skills-icon-container-gap { gap: 2rem; } */
 
 .about-skill-icon { width: auto; 
-              height: 40px; } 
+                    height: 40px; } 
 
 /* Old About classes */
 /* .about-page-container { margin: 1rem 3rem 1rem 3rem; }
