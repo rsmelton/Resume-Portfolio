@@ -84,7 +84,26 @@ a { text-decoration: none; }
 
 /* About classes */
 
-.about-page-container { margin: 1rem 3rem 1rem 3rem; }
+.about-page-container { padding: 2.5rem; 
+                        gap: 2.5rem; }
+
+.about-name-text-font-size { font-size: 3rem; }
+
+.about-text-blue-color { color: #4FA7FF; }
+
+.about-intro-section-gap { gap: 1rem; }
+
+.about-link-gap { gap: .5rem; }
+
+.about-skills-container-gap { gap: 1rem; }
+
+.about-skills-icon-container-gap { gap: 2rem; }
+
+.about-skill-icon { width: auto; 
+              height: 40px; } 
+
+/* Old About classes */
+/* .about-page-container { margin: 1rem 3rem 1rem 3rem; }
 
 .about-intro-img-container { justify-content: space-around; 
                              align-items: center;  
@@ -111,4 +130,4 @@ a { text-decoration: none; }
 .skills-icon-container-gap { gap: 1rem; }
 
 .skill-icon { width: auto; 
-              height: 40px; }
+              height: 40px; } */
