@@ -93,6 +93,12 @@ a { text-decoration: none; }
 
 .section-background { background-color: #CCCCCC; }
 
+.icon { width: auto; 
+        height: 30px; }
+
+.project-image { width: 150px; 
+                 height: auto; }
+
 /* .about-name-text-font-size { font-size: 3rem; }
 
 .about-text-blue-color { color: #4FA7FF; }
