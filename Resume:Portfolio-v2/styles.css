@@ -98,11 +98,19 @@ a { text-decoration: none; }
 .icon { width: auto; 
         height: 30px; }
 
-.project { gap: 1rem; }
+.projects-container { gap: 3rem; }
+
+.project { flex: 1;
+           gap: 1rem; 
+           padding: 1rem;
+           background-color: #DDDDDD;
+           box-shadow: 5px 10px 5px 5px #CCCCCC; }
 
 .project-image { width: 150px; 
                  height: auto; 
                  padding-top: 1rem; }
+
+.project-links { gap: 1rem; }
 
 /* .about-name-text-font-size { font-size: 3rem; }
 
