@@ -93,24 +93,43 @@ a { text-decoration: none; }
 
 .section-paragraph { padding-bottom: 1rem; }
 
+.section-list { padding: 0 0 1rem 1rem; }
+
 .section-background { background-color: #CCCCCC; }
 
 .icon { width: auto; 
-        height: 30px; }
+        height: 25px; }
 
-.projects-container { gap: 3rem; }
+.skills-container { gap: 1rem; }
+
+.skill-container { gap: 0.25rem; }
+
+.projects-container { gap: 1.5rem; }
 
 .project { flex: 1;
-           gap: 1rem; 
-           padding: 1rem;
+           /* gap: 1rem;  */
+           /* padding: 1rem; */
+           border-radius: 5%;
            background-color: #DDDDDD;
-           box-shadow: 5px 5px 5px 5px #CCCCCC; }
+           /* box-shadow: 5px 5px 5px 5px #CCCCCC;  */
+}
 
-.project-image { width: 150px; 
+.project-image { width: 100%; 
                  height: auto; 
-                 padding-top: 1rem; }
+                 border-radius: 5%;
+                 /* padding-top: 1rem;  */
+}
 
 .project-links { gap: 1rem; }
+
+.project-button { border: none; 
+                  border-radius: 1rem;
+                  background-color: black;
+                  color: white;
+                  padding: 0.5rem 1rem; 
+                  cursor: pointer; }
+
+.fun-prompt { text-indent: 1rem; }
 
 /* .about-name-text-font-size { font-size: 3rem; }
 
