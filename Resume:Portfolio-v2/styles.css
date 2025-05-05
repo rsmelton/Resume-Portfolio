@@ -116,7 +116,8 @@ a { text-decoration: none; }
 
 .project-image { width: 100%; 
                  height: auto; 
-                 border-radius: 5%;
+                 border-radius: 5% 5% 0px 0px;
+                 /* border-radius: 5%; */
                  /* padding-top: 1rem;  */
 }
 
