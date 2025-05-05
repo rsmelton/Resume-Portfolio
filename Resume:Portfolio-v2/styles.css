@@ -91,6 +91,8 @@ a { text-decoration: none; }
 
 .section-title { padding-bottom: 1em; }
 
+.section-paragraph { padding-bottom: 1rem; }
+
 .section-background { background-color: #CCCCCC; }
 
 .icon { width: auto; 
