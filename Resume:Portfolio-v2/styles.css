@@ -96,8 +96,11 @@ a { text-decoration: none; }
 .icon { width: auto; 
         height: 30px; }
 
+.project { gap: 1rem; }
+
 .project-image { width: 150px; 
-                 height: auto; }
+                 height: auto; 
+                 padding-top: 1rem; }
 
 /* .about-name-text-font-size { font-size: 3rem; }
 
