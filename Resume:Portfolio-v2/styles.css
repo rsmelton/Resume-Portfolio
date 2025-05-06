@@ -119,7 +119,9 @@ a { text-decoration: none; }
 .project-image-container { aspect-ratio: 2 / 1; 
                            width: 100%; 
                            height: 5em; 
-                           background-color: #d7ebfc; }
+                           background-color: #d7ebfc; 
+                           background: url(./images/icons/dragons-brew-icon.png);
+                           background-size: cover; }
                         
 .project-image { 
                  /* width: 100%; 
