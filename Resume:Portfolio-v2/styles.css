@@ -97,8 +97,8 @@ a { text-decoration: none; }
 
 .section-background { background-color: #CCCCCC; }
 
-.icon { width: auto; 
-        height: 25px; }
+.skill-icon { width: auto; 
+              height: 25px; }
 
 .skills-container { gap: 1rem; }
 
@@ -107,26 +107,25 @@ a { text-decoration: none; }
 .projects-container { gap: 1.5rem; }
 
 .project { flex: 1;
-           width: 200px;
+           width: 150px;
            max-width: 250px;
-           /* gap: 1rem;  */
-           /* padding: 1rem; */
            border-radius: 5%;
-           background-color: #DDDDDD;
-           /* box-shadow: 5px 5px 5px 5px #CCCCCC;  */
-}
+           background-color: #DDDDDD; }
 
 .project-inner-container { padding: 1rem; 
                            gap: 1rem; }
 
-.project-image { width: auto; 
-                 height: 100%; 
+.project-image-container { aspect-ratio: 2 / 1; 
+                           width: 100%; 
+                           height: auto; 
+                        }
+                        
+.project-image { 
+                 width: 100%; 
+                 height: auto; 
                  max-height: 250px;
-                 object-fit: cover;
-                 border-radius: 5% 5% 0px 0px;
-                 /* border-radius: 5%; */
-                 /* padding-top: 1rem;  */
-}
+                 object-fit: contain;
+                 border-radius: 5% 5% 0 0; }
 
 .project-links { gap: 1rem; }
 
@@ -137,10 +136,8 @@ a { text-decoration: none; }
                   padding: 0.5rem 1rem; 
                   cursor: pointer; }
 
-.project-button:hover {
-    background-color: white;
-    color: black;
-}
+.project-button:hover { background-color: white;
+                        color: black; }
 
 .fun-prompt { text-indent: 1rem; }
 
