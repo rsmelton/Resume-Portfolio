@@ -116,6 +116,9 @@ a { text-decoration: none; }
            /* box-shadow: 5px 5px 5px 5px #CCCCCC;  */
 }
 
+.project-inner-container { padding: 1rem; 
+                           gap: 1rem; }
+
 .project-image { width: auto; 
                  height: 100%; 
                  max-height: 250px;
