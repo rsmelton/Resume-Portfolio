@@ -84,9 +84,6 @@ a { text-decoration: none; }
 
 /* About classes */
 
-/* .about-page-container { padding: 2.5rem; 
-                        gap: 2.5rem; } */
-
 .section { padding: 3em; }
 
 .section-title { padding-bottom: 1em; }
@@ -117,20 +114,21 @@ a { text-decoration: none; }
 .project-inner-container { padding: 1rem; 
                            gap: 1rem; }
 
-.project-image-container { aspect-ratio: 16 / 9; 
-                           width: 100%; 
-                           height: 5em; 
+.project-image-container { 
+                           aspect-ratio: 16 / 9; 
+                           /* width: 100%;  */
+                           /* height: 5em;  */
                            background-color: #d7ebfc; 
                            /* background: url(./images/icons/dragons-brew-icon.png);
                            background-size: cover;  */
                         }
                         
 .project-image { 
-                 /* width: 100%; 
-                 height: auto; 
-                 max-height: 250px; */
-                 /* object-fit: cover; */
-                 /* border-radius: 5% 5% 0 0;  */
+                 width: 100%; 
+                 height: 100%; 
+                 /* max-height: 250px;  */
+                 object-fit: cover;
+                 /* border-radius: 5% 5% 0 0;  */ 
                 }
 
 .project-links { gap: 1rem; }
@@ -146,49 +144,4 @@ a { text-decoration: none; }
 .project-button:hover { background-color: white;
                         color: black; }
 
-.fun-prompt { text-indent: 1rem; }
-
-/* .about-name-text-font-size { font-size: 3rem; }
-
-.about-text-blue-color { color: #4FA7FF; }
-
-.about-intro-section-gap { gap: 1rem; }
-
-.about-link-gap { gap: .5rem; }
-
-.about-skills-container-gap { gap: 1rem; }
-
-.about-skills-icon-container-gap { gap: 2rem; } */
-
-/* .about-skill-icon { width: auto; 
-                    height: 40px; }  */
-
-/* Old About classes */
-/* .about-page-container { margin: 1rem 3rem 1rem 3rem; }
-
-.about-intro-img-container { justify-content: space-around; 
-                             align-items: center;  
-                             gap: 3rem; }
-
-.about-intro-gap { gap: 1rem; }
-
-.about-section-gap { gap: 5rem; }
-
-.about-img { width: 250px; 
-             height: auto; }
-
-.about-text-blue-color { color: #4FA7FF; }
-
-.about-link-gap { gap: .5rem; }
-
-.about-icon { width: auto; 
-              height: 40px; }
-
-.about-icon-description-gap { gap: .5rem; }
-
-.skills-container-gap { gap: 1rem; }
-
-.skills-icon-container-gap { gap: 1rem; }
-
-.skill-icon { width: auto; 
-              height: 40px; } */
+.fun-prompt { padding-left: 5em; }
