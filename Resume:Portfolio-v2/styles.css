@@ -117,7 +117,8 @@ a { text-decoration: none; }
 
 .project-image-container { aspect-ratio: 2 / 1; 
                            width: 100%; 
-                           height: 5em; }
+                           height: 5em; 
+                           background-color: #d7ebfc; }
                         
 .project-image { 
                  /* width: 100%; 
