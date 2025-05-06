@@ -140,7 +140,8 @@ a { text-decoration: none; }
                   background-color: black;
                   color: white;
                   padding: 0.5rem 1rem; 
-                  cursor: pointer; }
+                  cursor: pointer; 
+                  white-space: nowrap; }
 
 .project-button:hover { background-color: white;
                         color: black; }
