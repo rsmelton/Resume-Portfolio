@@ -92,7 +92,26 @@ a { text-decoration: none; }
 
 .section-list { padding: 0 0 1rem 1rem; }
 
-.section-background { background-color: #CCCCCC; }
+.section-background { background-color: #4FA7FF; }
+
+.about-me-container { justify-content: space-around; 
+                      gap: 3rem; }
+
+.about-me-intro { font-size: 3rem; }
+
+.about-me-intro-img { width: 17.5rem; 
+                      height: auto; }
+
+.about-me-title { padding-bottom: 1rem; 
+                  color: #4FA7FF; }
+
+.about-me-icon-description-container { gap: 0.5rem; }
+
+.about-me-icon { width: 30px; 
+                 height: auto; }
+
+.about-me-links { gap: 1rem; 
+                  padding-top: 1rem; }
 
 .skill-icon { width: auto; 
               height: 25px; }
