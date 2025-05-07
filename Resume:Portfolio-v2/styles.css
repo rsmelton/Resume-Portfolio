@@ -94,8 +94,7 @@ a { text-decoration: none; }
 
 .section-background { background-color: #4FA7FF; }
 
-.about-me-container { justify-content: space-around; 
-                      gap: 3rem; }
+.about-me-container { gap: 3rem; }
 
 .about-me-intro { font-size: 3rem; }
 
