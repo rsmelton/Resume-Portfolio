@@ -41,7 +41,7 @@ a { text-decoration: none; }
 /* Header Classes */
 
 .header-container { justify-content: flex-end; 
-                    padding: 1.5rem 1.5rem 0rem 1.5rem; 
+                    padding: 1.5rem; 
                     gap: 1rem; }
 
 /* Resume Classes */
@@ -84,6 +84,8 @@ a { text-decoration: none; }
 
 /* About classes */
 
+.topmost-section { padding: 0rem 3rem 3rem 3rem; }
+
 .section { padding: 3em; }
 
 .section-title { padding-bottom: 1em; }
@@ -107,11 +109,14 @@ a { text-decoration: none; }
 
 .about-me-icon-description-container { gap: 0.5rem; }
 
-.about-me-icon { width: 30px; 
+.about-me-icon { width: 40px; 
                  height: auto; }
 
+.about-me-description-text { font-size: 1.5rem; }
+
 .about-me-links { gap: 1rem; 
-                  padding-top: 1rem; }
+                  padding-top: 1rem; 
+                  font-size: 1.25rem; }
 
 .skill-icon { width: auto; 
               height: 25px; }
