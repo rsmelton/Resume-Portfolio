@@ -41,7 +41,7 @@ a { text-decoration: none; }
 /* Header Classes */
 
 .header-container { justify-content: flex-end; 
-                    padding: 1.5rem; 
+                    padding: 1.5rem 1.5rem 0rem 1.5rem; 
                     gap: 1rem; }
 
 /* Resume Classes */
@@ -96,7 +96,8 @@ a { text-decoration: none; }
 
 .about-me-container { gap: 3rem; }
 
-.about-me-intro { font-size: 3rem; }
+.about-me-intro { font-size: 3rem; 
+                  padding-bottom: 1rem; }
 
 .about-me-intro-img { width: 17.5rem; 
                       height: auto; }
