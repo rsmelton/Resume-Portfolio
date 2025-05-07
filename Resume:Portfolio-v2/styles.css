@@ -98,7 +98,7 @@ a { text-decoration: none; }
 
 .about-me-container { gap: 3rem; }
 
-.about-me-intro { font-size: 3rem; 
+.about-me-intro { font-size: 2rem; 
                   padding-bottom: 1rem; }
 
 .about-me-intro-img { width: 17.5rem; 
@@ -109,14 +109,14 @@ a { text-decoration: none; }
 
 .about-me-icon-description-container { gap: 0.5rem; }
 
-.about-me-icon { width: 40px; 
+.about-me-icon { width: 30px; 
                  height: auto; }
 
-.about-me-description-text { font-size: 1.5rem; }
+.about-me-description-text { font-size: 1rem; }
 
 .about-me-links { gap: 1rem; 
                   padding-top: 1rem; 
-                  font-size: 1.25rem; }
+                  font-size: 1rem; }
 
 .skill-icon { width: auto; 
               height: 25px; }
