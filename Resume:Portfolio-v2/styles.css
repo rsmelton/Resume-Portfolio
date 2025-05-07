@@ -107,7 +107,7 @@ a { text-decoration: none; }
 .about-me-title { padding-bottom: 1rem; 
                   color: #4FA7FF; }
 
-.about-me-icon-description-container { gap: 0.5rem; }
+.about-me-icon-description-container { gap: 1rem; }
 
 .about-me-icon { width: 30px; 
                  height: auto; }
