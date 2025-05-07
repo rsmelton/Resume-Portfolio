@@ -8,6 +8,8 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
+hr { border: 1px solid #4FA7FF; }
+
 /* .border-debugger { border: 1px solid red; }  */
 
 .italic { font-style: italic; }
@@ -94,7 +96,10 @@ a { text-decoration: none; }
 
 .section-list { padding: 0 0 1rem 1rem; }
 
-.section-background { background-color: #4FA7FF; }
+.icon { width: auto; 
+        height: 35px; }
+
+/* .section-background { background-color: #4FA7FF; } */
 
 .about-me-container { gap: 3rem; }
 
@@ -109,28 +114,27 @@ a { text-decoration: none; }
 
 .about-me-icon-description-container { gap: 1rem; }
 
-.about-me-icon { width: 30px; 
-                 height: auto; }
-
 .about-me-description-text { font-size: 1rem; }
 
 .about-me-links { gap: 1rem; 
                   padding-top: 1rem; 
                   font-size: 1rem; }
 
-.skill-icon { width: auto; 
-              height: 25px; }
+.philosophy-table-left-column-item { white-space: nowrap; 
+                                     text-align: right; 
+                                     vertical-align: top; 
+                                     padding-right: 1em; }
 
-.skills-container { gap: 1rem; }
+.philosophy-table-right-column-item { text-align: left; 
+                                      vertical-align: top; }
 
-.skill-container { gap: 0.25rem; }
+.skills-container { gap: 1.5rem; }
+
+.skill-container { gap: 0.75rem; }
 
 .projects-container { gap: 1.5rem; }
 
-.project { 
-           /* flex: 1; */
-           width: 300px;
-           /* max-width: 250px; */
+.project { width: 300px;
            border-radius: 5%;
            background-color: #DDDDDD; 
            overflow: hidden; }
@@ -138,22 +142,12 @@ a { text-decoration: none; }
 .project-inner-container { padding: 1rem; 
                            gap: 1rem; }
 
-.project-image-container { 
-                           aspect-ratio: 16 / 9; 
-                           /* width: 100%;  */
-                           /* height: 5em;  */
-                           background-color: #d7ebfc; 
-                           /* background: url(./images/icons/dragons-brew-icon.png);
-                           background-size: cover;  */
-                        }
+.project-image-container { aspect-ratio: 16 / 9;
+                           background-color: #d7ebfc; }
                         
-.project-image { 
-                 width: 100%; 
+.project-image { width: 100%; 
                  height: 100%; 
-                 /* max-height: 250px;  */
-                 object-fit: cover;
-                 /* border-radius: 5% 5% 0 0;  */ 
-                }
+                 object-fit: cover; }
 
 .project-links { gap: 1rem; }
 
@@ -169,3 +163,16 @@ a { text-decoration: none; }
                         color: black; }
 
 .fun-prompt { padding-left: 5em; }
+
+.iframe-container { position: relative;
+                    overflow: hidden; 
+                    width: 100%; 
+                    padding-top: 56.25%; }
+
+.responsive-iframe { position: absolute;
+                     top: 0; 
+                     right: 0;
+                     bottom: 0; 
+                     left: 0; 
+                     width: 100%; 
+                     height: 100%; }
