@@ -8,10 +8,6 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
-hr { border: 1px solid #4FA7FF; 
-     margin-left: 3em;
-     margin-right: 3em; }
-
 /* .border-debugger { border: 1px solid red; }  */
 
 .italic { font-style: italic; }
@@ -45,7 +41,7 @@ hr { border: 1px solid #4FA7FF;
 /* Header Classes */
 
 .header-container { justify-content: flex-end; 
-                    padding: 1.5rem; 
+                    /* padding: 1.5rem;  */
                     gap: 1rem; }
 
 /* Resume Classes */
@@ -88,15 +84,22 @@ hr { border: 1px solid #4FA7FF;
 
 /* About classes */
 
-.topmost-section { padding: 0rem 3rem 3rem 3rem; }
+.about-page-body-padding { padding: 1rem; }
 
-.section { padding: 3em; }
+.about-page-hr { border: 1px solid #4FA7FF; 
+                 margin-left: 3rem;
+                 margin-right: 3rem; }
 
-.section-title { padding-bottom: 1em; }
+.topmost-section { padding-bottom: 3rem; }
+
+.section { padding-top: 3rem; 
+           padding-bottom: 3rem; }
+
+.section-title { padding-bottom: 1rem; }
 
 .section-paragraph { padding-bottom: 1rem; }
 
-.section-list { padding: 0 0 1rem 1rem; }
+.section-list { padding: 0rem 0rem 1rem 1rem; }
 
 .container-border-radius { border-radius: 1rem; }
 
@@ -129,7 +132,7 @@ hr { border: 1px solid #4FA7FF;
 .philosophy-table-left-column-item { white-space: nowrap; 
                                      text-align: right; 
                                      vertical-align: top; 
-                                     padding-right: 1em; }
+                                     padding-right: 1rem; }
 
 .philosophy-table-right-column-item { text-align: left; 
                                       vertical-align: top; }
@@ -165,7 +168,7 @@ hr { border: 1px solid #4FA7FF;
 .project-button:hover { background-color: white;
                         color: black; }
 
-.fun-prompt { padding-left: 5em; }
+.fun-prompt { padding-left: 5rem; }
 
 .iframe-container { position: relative;
                     overflow: hidden; 
