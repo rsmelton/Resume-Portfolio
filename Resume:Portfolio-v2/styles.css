@@ -96,7 +96,7 @@ hr { border: 1px solid #4FA7FF; }
 
 .section-list { padding: 0 0 1rem 1rem; }
 
-.container-border-radius { border-radius: 5%; }
+.container-border-radius { border-radius: 25px; }
 
 .icon { width: auto; 
         height: 35px; }
