@@ -101,6 +101,8 @@ hr { border: 1px solid #4FA7FF; }
 .icon { width: auto; 
         height: 35px; }
 
+.icon-text-container { gap: 0.25rem; }
+
 /* .section-background { background-color: #4FA7FF; } */
 
 .about-me-container { gap: 3rem; }
@@ -118,7 +120,7 @@ hr { border: 1px solid #4FA7FF; }
 
 .about-me-description-text { font-size: 1rem; }
 
-.about-me-links { gap: 1rem; 
+.about-me-links { gap: 1.5rem; 
                   padding-top: 1rem; 
                   font-size: 1rem; }
 
@@ -131,8 +133,6 @@ hr { border: 1px solid #4FA7FF; }
                                       vertical-align: top; }
 
 .skills-container { gap: 1.5rem; }
-
-.skill-container { gap: 0.75rem; }
 
 .projects-container { gap: 1.5rem; }
 
