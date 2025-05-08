@@ -88,10 +88,10 @@ a { text-decoration: none; }
 
 .about-page-hr { border: 1px solid #DDDDDD; }
 
-.topmost-section { padding-bottom: 3rem; }
+.topmost-section { padding-bottom: 2rem; }
 
-.section { padding-top: 3rem; 
-           padding-bottom: 3rem; }
+.section { padding-top: 2rem; 
+           padding-bottom: 2rem; }
 
 .section-title { padding-bottom: 1rem; }
 
