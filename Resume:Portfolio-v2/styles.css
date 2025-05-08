@@ -96,6 +96,8 @@ hr { border: 1px solid #4FA7FF; }
 
 .section-list { padding: 0 0 1rem 1rem; }
 
+.container-border-radius { border-radius: 5%; }
+
 .icon { width: auto; 
         height: 35px; }
 
@@ -135,7 +137,6 @@ hr { border: 1px solid #4FA7FF; }
 .projects-container { gap: 1.5rem; }
 
 .project { width: 300px;
-           border-radius: 5%;
            background-color: #DDDDDD; 
            overflow: hidden; }
 
