@@ -86,9 +86,7 @@ a { text-decoration: none; }
 
 .about-page-body-padding { padding: 1rem; }
 
-.about-page-hr { border: 1px solid #4FA7FF; 
-                 margin-left: 3rem;
-                 margin-right: 3rem; }
+.about-page-hr { border: 1px solid #4FA7FF; }
 
 .topmost-section { padding-bottom: 3rem; }
 
