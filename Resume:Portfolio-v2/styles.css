@@ -8,7 +8,9 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
-hr { border: 1px solid #4FA7FF; }
+hr { border: 1px solid #4FA7FF; 
+     margin-left: 3em;
+     margin-right: 3em; }
 
 /* .border-debugger { border: 1px solid red; }  */
 
