@@ -84,9 +84,9 @@ a { text-decoration: none; }
 
 /* About classes */
 
-.about-page-body-padding { padding: 1rem; }
+.about-page-body-padding { padding: 3rem; }
 
-.about-page-hr { border: 1px solid #4FA7FF; }
+.about-page-hr { border: 1px solid #EEEEEE; }
 
 .topmost-section { padding-bottom: 3rem; }
 
