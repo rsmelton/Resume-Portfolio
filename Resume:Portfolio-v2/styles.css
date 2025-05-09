@@ -46,7 +46,9 @@ a { text-decoration: none; }
 
 /* Resume Classes */
 
-.resume-container { padding: 0 1.5rem 1.5rem 1.5rem; }
+.resume-page-body-padding { padding: 2rem; }
+
+/* .resume-container { padding: 0 1.5rem 1.5rem 1.5rem; } */
 
 .resume-pdf-version-link-top-padding { padding-top: 1rem; }
 
@@ -153,7 +155,11 @@ a { text-decoration: none; }
                  height: 100%; 
                  object-fit: cover; }
 
-.project-links { gap: 1rem; }
+.project-used-technologies-gap { gap: 0.5rem; }
+
+.project-list-padding-left { padding-left: 1rem; }
+
+.project-buttons { gap: 1rem; }
 
 .project-button { border: none; 
                   border-radius: 1rem;
