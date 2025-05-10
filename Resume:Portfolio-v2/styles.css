@@ -157,9 +157,9 @@ a { text-decoration: none; }
                  height: 100%; 
                  object-fit: cover; }
 
-.project-paragraph-container { height: 7rem; border: 1px solid red; }
+.project-paragraph-container { height: 6rem; border: 1px solid red; }
 
-.project-features-container { height: 13rem; border: 1px solid red; }
+.project-features-container { height: 15rem; border: 1px solid red; }
 
 .project-used-technologies-gap { gap: 0.5rem; }
 
