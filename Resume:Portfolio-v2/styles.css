@@ -150,7 +150,7 @@ a { text-decoration: none; }
 .project-inner-container { padding: 1rem; 
                            gap: 1rem; }
 
-.project-image-container { aspect-ratio: 16 / 9;
+.project-image-container { aspect-ratio: 3 / 1;
                            background-color: #d7ebfc; }
                         
 .project-image { width: 100%; 
