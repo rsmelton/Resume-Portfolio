@@ -49,7 +49,7 @@ a { text-decoration: none; }
 
 /* Resume Classes */
 
-.resume-page-body-padding { padding: 2rem; }
+.resume-page-body-padding { padding: 1rem; }
 
 /* .resume-container { padding: 0 1.5rem 1.5rem 1.5rem; } */
 
@@ -89,7 +89,7 @@ a { text-decoration: none; }
 
 /* About classes */
 
-.about-page-body-padding { padding: 2rem; }
+.about-page-body-padding { padding: 1rem; }
 
 .about-page-hr { border: 1px solid #DDDDDD; }
 
