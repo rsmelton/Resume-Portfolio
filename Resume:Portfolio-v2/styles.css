@@ -112,8 +112,6 @@ a { text-decoration: none; }
 
 /* .section-background { background-color: #4FA7FF; } */
 
-.about-me-container { gap: 3rem; }
-
 .about-me-intro { font-size: 2rem; 
                   padding-bottom: 1rem; }
 
@@ -150,7 +148,7 @@ a { text-decoration: none; }
 .project-inner-container { padding: 1rem; 
                            gap: 1rem; }
 
-.project-image-container { height: 5em;
+.project-image-container { height: 7em;
                            align-items: flex-start;
                            background-color: #d7ebfc; }
                         
