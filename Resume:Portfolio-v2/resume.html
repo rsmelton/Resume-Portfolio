@@ -7,10 +7,10 @@
     <title>Robert's Resume</title>
 </head>
 <body class="resume-page-body-padding">
-    <nav class="flex flex-wrap header-container">
+    <!-- <nav class="flex flex-wrap header-container">
         <a href="/">About</a>
         <span class="bold">Resume</span>
-    </nav>
+    </nav> -->
     <div class="flex flex-column resume-container">
         <!-- This div is commented out because we may need it later
              in the index.html file, but I don't want to have to keep
@@ -23,8 +23,12 @@
         <h1>Robert Melton</h1>
         <a href="mailto:Robert%20Melton%20%3cr.scott.melton@gmail.com%3e"><span>r.scott.melton@gmail.com</span></a>
         <div class="resume-topmost-hr-div fade-color"></div>
-        <div class="flex flex-column resume-section-gap">
-            <a class="resume-pdf-version-link-top-padding" href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a>
+        <nav class="flex flex-wrap header-container border-debugger" style="padding-top: 1rem;">
+            <span class="bold">About</span>
+            <a href="/resume.html">Resume</a>
+        </nav>
+        <div class="flex flex-column resume-section-gap space-below-topmost-hr-div">
+            <a href="https://roberts-personal-website.vercel.app/roberts-resume.pdf">PDF version</a>
             <div class="flex flex-column resume-item-gap">
                 <span class="label">OBJECTIVE</span>
                 <p>To join a technical staff that enables me to learn and grow from mentors, continue to add depth and breadth to my web development technology stack, and build well-designed, robust applications in an interesting domain</p>

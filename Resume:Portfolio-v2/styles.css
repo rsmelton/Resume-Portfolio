@@ -52,11 +52,11 @@ a { text-decoration: none; }
 
 /* .resume-container { padding: 0 1.5rem 1.5rem 1.5rem; } */
 
-.resume-pdf-version-link-top-padding { padding-top: 1rem; }
-
 .resume-list-item { margin-left: 3rem; }
 
 .resume-topmost-hr-div { padding: 0.15625rem; }
+
+.space-below-topmost-hr-div { padding-top: 1rem; }
 
 .resume-section-gap { gap: 2rem; }
 
