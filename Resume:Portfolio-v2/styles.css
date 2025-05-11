@@ -112,8 +112,7 @@ a { text-decoration: none; }
 
 /* .section-background { background-color: #4FA7FF; } */
 
-.about-me-intro { font-size: 2rem; 
-                  padding-bottom: 1rem; }
+.about-me-intro { font-size: 2rem; }
 
 .about-me-intro-img { width: 17.5rem; 
                       height: auto; }
