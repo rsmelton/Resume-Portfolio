@@ -42,7 +42,7 @@ a { text-decoration: none; }
 
 /* Header Classes */
 
-.header-container { justify-content: flex-end; 
+.header-container { justify-content: flex-start; 
                     /* padding: 1.5rem;  */
                     gap: 1rem; }
 
