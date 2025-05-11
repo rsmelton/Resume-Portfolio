@@ -43,7 +43,8 @@ a { text-decoration: none; }
 /* Header Classes */
 
 .header-container { justify-content: flex-start; 
-                    /* padding: 1.5rem;  */
+                    padding-top: 1rem;
+                    padding-bottom: 1rem; 
                     gap: 1rem; }
 
 /* Resume Classes */
