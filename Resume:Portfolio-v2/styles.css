@@ -43,7 +43,7 @@ a { text-decoration: none; }
 /* Header Classes */
 
 .header-container { justify-content: flex-start; 
-                    padding-top: 1rem;
+                    padding-top: 0.5rem;
                     padding-bottom: 1rem; 
                     gap: 1rem; }
 
