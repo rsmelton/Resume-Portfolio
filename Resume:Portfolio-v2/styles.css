@@ -8,7 +8,7 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
-.border-debugger { border: 1px solid red; } 
+/* .border-debugger { border: 1px solid red; }  */
 
 .italic { font-style: italic; }
 
@@ -98,7 +98,9 @@ a { text-decoration: none; }
 .section { padding-top: 2rem; 
            padding-bottom: 2rem; }
 
-.section-title { padding-bottom: 1rem; }
+.section-title { padding-bottom: 1rem; 
+                 width: 100%; 
+                 background: #eeeeee;}
 
 .section-paragraph { padding-bottom: 1rem; }
 
@@ -109,11 +111,14 @@ a { text-decoration: none; }
 .icon { width: auto; 
         height: 25px; }
 
-.mongo-db-icon { width: auto; height: 27px; }
+.mongo-db-icon { width: auto; 
+                 height: 27px; }
 
-.express-js-icon { width: auto; height: 20px; }
+.express-js-icon { width: auto; 
+                   height: 20px; }
 
-.vercel-icon { width: auto; height: 23px; }
+.vercel-icon { width: auto; 
+               height: 23px; }
 
 .icon-text-container { gap: 0.25rem; }
 
