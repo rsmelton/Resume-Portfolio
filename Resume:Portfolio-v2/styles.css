@@ -109,6 +109,12 @@ a { text-decoration: none; }
 .icon { width: auto; 
         height: 25px; }
 
+.mongo-db-icon { width: auto; height: 27px; }
+
+.express-js-icon { width: auto; height: 22px; }
+
+.vercel-icon { width: auto; height: 23px; }
+
 .icon-text-container { gap: 0.25rem; }
 
 /* .section-background { background-color: #4FA7FF; } */
