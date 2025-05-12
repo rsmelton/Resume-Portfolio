@@ -8,7 +8,7 @@ html { font-family: sans-serif;
 
 a { text-decoration: none; }
 
-/* .border-debugger { border: 1px solid red; }  */
+.border-debugger { border: 1px solid red; } 
 
 .italic { font-style: italic; }
 
