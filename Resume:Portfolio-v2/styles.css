@@ -16,6 +16,8 @@ a { text-decoration: none; }
 
 .flex { display: flex; }
 
+.flex-row { flex-direction: row; }
+
 .flex-column { flex-direction: column; }
 
 .flex-row-horizontal-flex-end { justify-content: flex-end; }
@@ -24,13 +26,16 @@ a { text-decoration: none; }
 
 .flex-wrap { flex-wrap: wrap; }
 
+.grid { display: grid; }
+
 .justify-content-center { justify-content: center; }
 
 .align-items-center { align-items: center; }
 
 .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
 
-.separator { padding: 0rem 0.5rem 0rem 0.5rem; 
+.separator { padding-right: 0.5rem;
+             padding-left: 0.5rem;
              color: #AAAAAA; }
 
 .label { color: #777777;
@@ -51,8 +56,6 @@ a { text-decoration: none; }
 
 .resume-page-body-padding { padding: 1.5rem; }
 
-/* .resume-container { padding: 0 1.5rem 1.5rem 1.5rem; } */
-
 .resume-list-item { margin-left: 3rem; }
 
 .resume-topmost-hr-div { padding: 0.15625rem; }
@@ -65,7 +68,9 @@ a { text-decoration: none; }
 
 /* Portfolio Classes */
 
-.portfolio-container { padding: 0 1.5rem 1.5rem 1.5rem; }
+.portfolio-container { padding-right: 1.5rem;
+                       padding-bottom: 1.5rem;
+                       padding-left: 1.5rem; }
 
 .portfolio-section-gap { gap: 2rem; }
 
@@ -91,25 +96,37 @@ a { text-decoration: none; }
 
 .about-page-body-padding { padding: 1.5rem; }
 
-.about-page-hr { border: 1px solid #DDDDDD; }
+/* Not currently in use */
+/* .about-page-hr { border: 1px solid #DDDDDD; } */
 
 .topmost-section { padding-bottom: 2rem; }
 
 .section { padding-top: 2rem; 
            padding-bottom: 2rem; }
 
-.section-title { padding-bottom: 1rem; 
+.section-title { margin-bottom: 1rem;
+                 padding: 1rem;
                  width: 100%; 
                  background: #eeeeee;}
 
 .section-paragraph { padding-bottom: 1rem; }
 
-.section-list { padding: 0rem 0rem 1rem 1rem; }
+.section-list { padding-bottom: 1rem;
+                padding-left: 1rem; }
 
 .container-border-radius { border-radius: 1rem; }
 
 .icon { width: auto; 
         height: 25px; }
+
+.email-icon { height: 22.5px;
+              width: auto; }
+
+.github-icon { height: 26.9px;
+               width: auto; }
+
+.linkedin-icon { height: 27.5px;
+                 width: auto; }
 
 .mongo-db-icon { width: auto; 
                  height: 27px; }
@@ -121,8 +138,6 @@ a { text-decoration: none; }
                height: 23px; }
 
 .icon-text-container { gap: 0.25rem; }
-
-/* .section-background { background-color: #4FA7FF; } */
 
 .about-me-intro { font-size: 2rem; }
 
@@ -137,8 +152,7 @@ a { text-decoration: none; }
 .about-me-description-text { font-size: 1rem; }
 
 .about-me-links { gap: 1.5rem; 
-                  padding-top: 1rem; 
-                  font-size: 1rem; }
+                  padding-top: 1rem; }
 
 .philosophy-table-left-column-item { white-space: nowrap; 
                                      text-align: right; 
@@ -147,6 +161,10 @@ a { text-decoration: none; }
 
 .philosophy-table-right-column-item { text-align: left; 
                                       vertical-align: top; }
+
+.philosophy-content-gap { gap: 1rem; }
+
+.toolbox-content-gap { gap: 1rem; }
 
 .skills-container { gap: 1.5rem; }
 
@@ -166,6 +184,8 @@ a { text-decoration: none; }
                  height: 100%; 
                  object-fit: cover; }
 
+.project-title-and-links-container { gap: 0.3rem; }
+
 .project-paragraph-container { height: 3.5rem; }
 
 .project-features-container { height: 11.5rem; overflow: auto; }
@@ -180,7 +200,10 @@ a { text-decoration: none; }
                   border-radius: 1rem;
                   background-color: black;
                   color: white;
-                  padding: 0.5rem 1rem; 
+                  padding-top: 0.5rem;
+                  padding-right: 1rem;
+                  padding-bottom: 0.5rem;
+                  padding-left: 1rem; 
                   cursor: pointer; 
                   white-space: nowrap; }
 
