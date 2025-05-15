@@ -199,7 +199,7 @@ a { text-decoration: none; }
                         
 .project-image { width: 100%;
                  height: 100%; 
-                 object-fit: cover; }
+                 object-fit: contain; }
 
 .project-title-and-links-container { gap: 0.3rem; }
 
