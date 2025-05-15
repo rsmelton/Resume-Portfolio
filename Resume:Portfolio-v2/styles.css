@@ -26,17 +26,20 @@ a { text-decoration: none; }
 
 .flex-wrap { flex-wrap: wrap; }
 
-.grid { display: grid; }
+.flex-nowrap { flex-wrap: nowrap; }
 
 .justify-content-center { justify-content: center; }
 
 .align-items-center { align-items: center; }
 
+.standard-padding-bottom { padding-bottom: 1rem; }
+
 .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
 
-.separator { padding-right: 0.5rem;
+/* Not currently in use */
+/* .separator { padding-right: 0.5rem;
              padding-left: 0.5rem;
-             color: #AAAAAA; }
+             color: #AAAAAA; } */
 
 .label { color: #777777;
          text-transform: uppercase;
@@ -48,8 +51,7 @@ a { text-decoration: none; }
 /* Header Classes */
 
 .header-container { justify-content: flex-start; 
-                    padding-top: 0.5rem;
-                    padding-bottom: 1rem; 
+                    padding-top: 0.5rem; 
                     gap: 1rem; }
 
 /* Resume Classes */
@@ -104,17 +106,29 @@ a { text-decoration: none; }
 .section { padding-top: 2rem; 
            padding-bottom: 2rem; }
 
-.section-title { 
-                 /* margin-bottom: 1rem; */
-                 padding: 1rem;
-                 /* width: 100%;  */
-                 /* background: #eeeeee; */
-                }
+.section-title-container { margin-bottom: 1rem; }
+
+.section-title { text-transform: uppercase; 
+                 letter-spacing: 15px; }
+
+.section-title-left-hr { width: 3em; 
+                         height: 1px; 
+                         background: #AAAAAA; 
+                         margin-right: 15px; }
+
+.section-title-right-hr { width: 100%; 
+                         height: 1px; 
+                         background: #AAAAAA; }
 
 .section-paragraph { padding-bottom: 1rem; }
 
 .section-list { padding-bottom: 1rem;
                 padding-left: 1rem; }
+
+.characteristics-grid-container { display: grid; 
+                                  grid-template-rows: 1fr 1fr 1fr 1fr; 
+                                  grid-template-columns: 25px 200px; 
+                                  gap: 1rem; }
 
 .container-border-radius { border-radius: 1rem; }
 
@@ -156,13 +170,14 @@ a { text-decoration: none; }
 .about-me-links { gap: 1.5rem; 
                   padding-top: 1rem; }
 
-.philosophy-table-left-column-item { white-space: nowrap; 
+/* Not currently in use */
+/* .philosophy-table-left-column-item { white-space: nowrap; 
                                      text-align: right; 
                                      vertical-align: top; 
                                      padding-right: 1rem; }
 
 .philosophy-table-right-column-item { text-align: left; 
-                                      vertical-align: top; }
+                                      vertical-align: top; } */
 
 .philosophy-content-gap { gap: 1rem; }
 
