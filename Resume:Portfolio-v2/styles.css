@@ -154,7 +154,7 @@ a { text-decoration: none; }
 .projects-container { gap: 1.5rem; }
 
 .project { width: 18.75rem;
-           background-color: #DDDDDD; 
+           background-color: #EEEEEE; 
            overflow: hidden; }
 
 .project-inner-container { padding: 1rem; 
