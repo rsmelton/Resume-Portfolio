@@ -1,3 +1,7 @@
+:root {
+    --section-vertical-whitespace: 2rem; 
+}
+
 * { box-sizing: border-box;
     margin: 0;
     padding: 0; }
@@ -101,15 +105,14 @@ a { text-decoration: none; }
 /* Not currently in use */
 /* .about-page-hr { border: 1px solid #DDDDDD; } */
 
-/* .topmost-section { padding-bottom: 2rem; } */
+.topmost-section { padding-bottom: var(--section-vertical-whitespace); }
 
-.section { padding-top: 2rem; 
-           padding-bottom: 2rem; }
+.section { padding-bottom: var(--section-vertical-whitespace); }
 
-/* .section-title-container { margin-bottom: 2rem; } */
+.section-title-container { padding-bottom: var(--section-vertical-whitespace); }
 
 .section-title { text-transform: uppercase; 
-                 letter-spacing: 15px; }
+                 letter-spacing: 12px; }
 
 .section-title-left-hr { width: 3em; 
                          height: 1px; 
