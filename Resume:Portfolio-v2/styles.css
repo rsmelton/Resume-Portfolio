@@ -64,7 +64,9 @@ a { text-decoration: none; }
 
 .resume-list-item { margin-left: 3rem; }
 
-.resume-topmost-hr-div { padding: 0.15625rem; 
+.resume-topmost-hr-div { 
+                         /* padding: 0.15625rem;  */
+                         height: 1px;
                          background: #AAAAAA; 
                         }
 
