@@ -87,7 +87,7 @@ a { text-decoration: none; }
 .section-title-container { padding-bottom: var(--section-vertical-whitespace); }
 
 .section-title { text-transform: uppercase; 
-                 letter-spacing: 12px; }
+                 letter-spacing: 10px; }
 
 .section-title-left-hr { width: 3em; 
                          height: 1px; 
