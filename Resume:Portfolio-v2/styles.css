@@ -87,12 +87,12 @@ a { text-decoration: none; }
 
 .section-title-left-hr { width: 3em; 
                          height: 1px; 
-                         background: #AAAAAA; 
+                         /* background: #AAAAAA;  */
                          margin-right: 15px; }
 
 .section-title-right-hr { width: 100%; 
                          height: 1px; 
-                         background: #AAAAAA; }
+                         /* background: #AAAAAA;  */ }
 
 .section-paragraph { padding-bottom: 1rem; }
 
