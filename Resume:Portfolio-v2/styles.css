@@ -106,7 +106,7 @@ a { text-decoration: none; }
                                   row-gap: 1rem;
                                   column-gap: 0.5rem; }
 
-.toolbox-outer-container { gap: 2rem; }
+.toolbox-outer-container { gap: 3rem; }
 
 .toolbox-inner-container { gap: 0.2rem; }
 
@@ -115,7 +115,7 @@ a { text-decoration: none; }
 
 .toolbox-grid-container { display: grid; 
                           grid-template-rows: repeat(1fr, 4);
-                          grid-template-columns: 175px 175px; 
+                          grid-template-columns: 125px 125px; 
                           row-gap: 0.5rem; }
                                   
 /* .technologies-text-grid-item { grid-row-start: 1; 
