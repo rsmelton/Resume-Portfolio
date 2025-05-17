@@ -103,7 +103,7 @@ a { text-decoration: none; }
 .characteristics-grid-container { display: grid; 
                                   grid-template-rows: 1fr 1fr 1fr 1fr; 
                                   grid-template-columns: 25px 200px; 
-                                  row-gap: 0.75rem;
+                                  row-gap: 0.5rem;
                                   column-gap: 1rem; }
 
 .toolbox-outer-container { gap: 3rem; }
