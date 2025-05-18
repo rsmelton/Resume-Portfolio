@@ -116,8 +116,8 @@ a { text-decoration: none; }
 .toolbox-grid-container { display: grid; 
                           grid-template-rows: repeat(1fr, 4);
                           grid-template-columns: 30px 100px 30px 100px; 
-                          row-gap: 0.5rem; 
-                          column-gap: 0rem; }
+                          row-gap: 0rem; 
+                          column-gap: 0.3rem; }
                                   
 /* .technologies-text-grid-item { grid-row-start: 1; 
                                grid-row-end: 2;
