@@ -108,7 +108,7 @@ a { text-decoration: none; }
 
 .toolbox-outer-container { gap: 3rem; }
 
-.toolbox-inner-container { gap: 0.2rem; }
+.toolbox-inner-container { gap: 1rem; }
 
 .toolbox-icons-container { gap: 1rem; 
                            align-items: flex-end; }
