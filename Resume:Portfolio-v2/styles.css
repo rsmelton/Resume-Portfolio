@@ -117,11 +117,7 @@ a { text-decoration: none; }
                           grid-template-rows: repeat(1fr, 4);
                           grid-template-columns: 30px 100px 30px 100px; 
                           row-gap: 0.5rem; 
-                          column-gap: 0.2rem; 
-                          border: 1px solid black; 
-                          background: #EEEEEE; 
-                          padding: 1rem; 
-                          border-radius: 1rem;}
+                          column-gap: 0.2rem; }
                                   
 /* .technologies-text-grid-item { grid-row-start: 1; 
                                grid-row-end: 2;
