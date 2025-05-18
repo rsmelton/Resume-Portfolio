@@ -117,7 +117,7 @@ a { text-decoration: none; }
                           grid-template-rows: repeat(1fr, 4);
                           grid-template-columns: 30px 100px 30px 100px; 
                           row-gap: 0.5rem; 
-                          column-gap: 0.2rem; }
+                          column-gap: 0rem; }
                                   
 /* .technologies-text-grid-item { grid-row-start: 1; 
                                grid-row-end: 2;
