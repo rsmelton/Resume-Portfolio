@@ -24,10 +24,6 @@ a { text-decoration: none; }
 
 .flex-column { flex-direction: column; }
 
-.flex-row-horizontal-flex-end { justify-content: flex-end; }
-
-.flex-grow { flex-grow: 1; }
-
 .flex-wrap { flex-wrap: wrap; }
 
 .flex-nowrap { flex-wrap: nowrap; }
@@ -39,11 +35,6 @@ a { text-decoration: none; }
 .standard-padding-bottom { padding-bottom: 1rem; }
 
 .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
-
-/* Not currently in use */
-/* .separator { padding-right: 0.5rem;
-             padding-left: 0.5rem;
-             color: #AAAAAA; } */
 
 .label { color: #777777;
          text-transform: uppercase;
@@ -64,11 +55,8 @@ a { text-decoration: none; }
 
 .resume-list-item { margin-left: 3rem; }
 
-.resume-topmost-hr-div { 
-                         /* padding: 0.15625rem;  */
-                         height: 1px;
-                         background: #AAAAAA; 
-                        }
+.resume-topmost-hr-div { height: 1px;
+                         background: #AAAAAA; }
 
 .space-below-topmost-hr-div { padding-top: 1rem; }
 
@@ -110,37 +98,12 @@ a { text-decoration: none; }
 
 .toolbox-inner-container { gap: 1rem; }
 
-.toolbox-icons-container { gap: 1rem; 
-                           align-items: flex-end; }
-
 .toolbox-grid-container { display: grid; 
                           grid-template-rows: repeat(1fr, 4);
-                          grid-template-columns: 30px 100px 30px 100px; 
+                          grid-template-columns: 1.875rem 6.25rem 1.875rem 6.25rem;
+                          /* grid-template-columns: 30px 100px 30px 100px;  */
                           row-gap: 0.3rem; 
-                          column-gap: 0.3rem; }
-                                  
-/* .technologies-text-grid-item { grid-row-start: 1; 
-                               grid-row-end: 2;
-                               grid-column-start: 1;
-                               grid-column-end: 2; }
-
-.platforms-text-grid-item { grid-row-start: 1; 
-                            grid-row-end: 2;
-                            grid-column-start: 2;
-                            grid-column-end: 3; }
-
-.toolbox-grid-container { display: grid; 
-                          grid-template-rows: 20px 35px 1fr; 
-                          grid-template-columns: 1fr 1fr; }
-
-.technologies-grid-container { display: grid; 
-                               grid-template-rows: 1fr 1fr 1fr 1fr; 
-                               grid-template-columns: 1fr 1fr; 
-                               align-items: center; }
-
-.platforms-grid-container { display: grid; 
-                            grid-template-rows: 1fr 1fr 1fr 1fr; 
-                            grid-template-columns: 1fr 1fr; } */
+                          column-gap: 0.3rem; } 
 
 .container-border-radius { border-radius: 1rem; }
 
@@ -169,24 +132,12 @@ a { text-decoration: none; }
 
 .about-me-intro { font-size: 2rem; }
 
-.about-me-intro-img { width: 17.5rem; 
-                      height: auto; }
-
-.about-me-title { padding-bottom: 1rem; 
-                  color: #4FA7FF; }
-
-.about-me-icon-description-container { gap: 1rem; }
-
 .about-me-description-text { font-size: 1rem; }
 
 .about-me-links { gap: 1.5rem; 
                   padding-top: 1rem; }
 
 .philosophy-content-gap { gap: 1rem; }
-
-.toolbox-content-gap { gap: 1rem; }
-
-.skills-container { gap: 1.5rem; }
 
 .projects-container { gap: 1.5rem; }
 
@@ -246,29 +197,3 @@ a { text-decoration: none; }
                      left: 0; 
                      width: 100%; 
                      height: 100%; }
-
-/* Portfolio Classes */
-
-/* .portfolio-container { padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem; }
-
-.portfolio-section-gap { gap: 2rem; }
-
-.portfolio-gap { gap: 1rem; }
-
-.portfolio-tech-icon-list-flex-gap { gap: 0.5rem; }
-
-.portfolio-project-hr-div { padding: 0.125rem; }
-
-.portfolio-list-item { margin-left: 1rem; }
-
-.portfolio-tech-icon-container { padding-top: 0.25rem; }
-
-.portfolio-tech-icon { height: 1.8rem;
-    width: auto;
-    display: block; }
-
-.portfolio-project-image { width: 9.375rem;
-        height: auto;
-        border-radius: 1rem; } */
