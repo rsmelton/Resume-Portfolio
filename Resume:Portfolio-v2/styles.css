@@ -32,6 +32,8 @@ a { text-decoration: none; }
 
 .align-items-center { align-items: center; }
 
+.align-items-end { align-items: end; }
+
 .standard-padding-bottom { padding-bottom: 1rem; }
 
 .fade-color { background: linear-gradient(90deg, #90c9fb 5%, #EEEEEE 100%); }
